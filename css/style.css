@@ -263,6 +263,11 @@ body {
 	width: 80%;
 }
 
+.text_ex {
+    color: #F44336;
+    margin: 0;
+}
+
 .loyalty-content_text {
 	font-family: "Roboto Regular";
 	color: #000000;
@@ -688,7 +693,12 @@ body {
 	-moz-border-radius: 10px;
 	outline: none;
 
-	width: 390px;
+	width: 350px;
+	margin-right: 3%;
+}
+
+.bonus_calculation-item:last-child {
+	margin-right: 0;
 }
 
 .bonus_calculation-item_text-hidden {
@@ -701,7 +711,7 @@ body {
 .bonus_calculation-item_text {
 	font-family: "Roboto Regular";
 	color: #504B4B;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 400;
 	letter-spacing: 1px;
 	line-height: 140%;
@@ -737,12 +747,15 @@ input:focus:-ms-input-placeholder { color:transparent; }
 
 
 
-
-.bonus_calculation-item_cards {
+.__select__input {
 	display: none;
 }
 
-.hide_cards:checked + .button_hidden_cards + .bonus_calculation-item_cards {
+.cards-hidden_block {
+	display: none;
+}
+
+.__select__input:focus + .__select__label + .cards-hidden_block {
 	display: block;
 }
 
@@ -759,7 +772,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 
 .private_club-registration {
 	padding: 0 115px;
-	margin-bottom: 188px;
+	margin-bottom: 120px;
 	display: flex;
 	flex-direction: column;
 }
@@ -816,7 +829,6 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	font-weight: 400;
 	letter-spacing: 1px;
 	line-height: 140%;
-	margin: 0 0 50px;
 }
 
 .section_option_text-item {
@@ -836,7 +848,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	z-index: 3;
 	position: absolute;
 	right: 5%;
-	top: 4900px;
+	bottom: 700px;
 	width: 150px;
 }
 
@@ -965,1519 +977,1145 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	margin: 8px 0 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-.nalog-explan-block {
-	padding: 80px 0;
-}
-
-.nalog-explan_text {
-	font-family: "Roboto Regular";
-	color: #000000;
-	font-size: 20px;
-	font-weight: 400;
-	line-height: 150%;
-	letter-spacing: 1px;
-	margin: 0 3%;
-	text-align: justify;
-}
-
-strong {
-	color: #F44336;
-	font-weight: 700;
-}
-
-.icon_top {
-	z-index: 3;
-	position: absolute;
-	right: 10%;
-	top: 760px;
-	width: 150px;
-}
-
-.nalog-advantages {
-	padding: 0 50px;
-	margin-bottom: 80px;
-}
-
-.nalog-section_title {
-	font-family: "Roboto Regular";
-	color: #000000;
-	font-size: 28px;
-	font-weight: 400;
-	display: flex;
-	flex-wrap: wrap;
-	letter-spacing: 1px;
-	line-height: 130%;
-	width: 40%;
-	margin-bottom: 50px;
-}
-
-.text_ex {
-	color: #F44336;
-	margin: 0;
-}
-
-.nalog-advantages_categories {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-.nalog-advantages__category {
-	display: flex;
-	flex-wrap: nowrap;
-	width: 45%;
-	margin-bottom: 40px;
-}
-
-.nalog-advantages__category-icon {
-	margin-right: 40px;
-}
-
-.nalog-advantages__category-inform-name {
-	font-family: "Roboto Regular";
-	color: #000000;
-	font-size: 24px;
-	font-weight: 700;
-	letter-spacing: 1px;
-	line-height: 150%;
-	margin: 0 0 20px;
-}
-
-.nalog-advantages__category-inform-text {
-	font-family: "Roboto Regular";
-	color: #000000;
-	font-size: 18px;
-	font-weight: 400;
-	letter-spacing: 1px;
-	line-height: 140%;
-	margin: 0;
-}
-
-.nalog-score {
-	padding-left: 50px;
-	display: flex;
-	flex-wrap: nowrap;
-	margin-bottom: 120px;
-
-	position: relative;
-	overflow: hidden;
-}
-
-.nalog-score_items {
-	display: flex;
-	flex-direction: column;
-	margin-right: 30px;
-}
-
-.nalog-score_item {
-	background-color: #F44336;
-	padding: 30px 80px 40px 35px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: right center;
-	margin-bottom: 20px;
-	width: 430px;
-	border-radius: 10px 10px 50px 0;
-	-webkit-border-radius: 10px 10px 50px 0;
-	-moz-border-radius: 10px 10px 50px 0;
-
-}
-
-.nalog-score_item_summ {
-	font-family: "Roboto Regular";
-	color: #ffffff;
-	font-size: 40px;
-	font-weight: 700;
-	letter-spacing: 1px;
-	line-height: 150%;
-	margin: 0 0 30px;
-}
-
-.nalog-score_item_text {
-	font-family: "Roboto Regular";
-	color: #ffffff;
-	font-size: 18px;
-	font-weight: 400;
-	letter-spacing: 1px;
-	line-height: 140%;
-	margin: 0;
-}
-
-.nalog-score_item:nth-child(2) {
-	background-color: #0070C9;
-	padding: 30px 80px 40px 35px;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: right center;
-	margin-bottom: 0;
-	width: 430px;
-	border-radius: 50px 10px 10px 0;
-	-webkit-border-radius: 50px 10px 10px 0;
-	-moz-border-radius: 50px 10px 10px 0;
-}
-
-.nalog-score_img {
-	position: relative;
-}
-
-.nalog-actions-section {
-	background-color: #F2F5F7;
-	margin: 0 20px 120px;
-	border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-}
-
-.nalog-actions-section_block {
-	padding: 80px 0;
-	display: flex;
-	flex-wrap: nowrap;
-}
-
-.nalog-actions_title {
-	font-family: "Roboto Regular";
-	color: #000000;
-	font-size: 28px;
-	font-weight: 400;
-	letter-spacing: 1px;
-	line-height: 130%;
-	width: 40%;
-	margin: 0 5% 0 30px;
-}
-
-.nalog-actions {
-	display: flex;
-	flex-direction: column;
-	margin-right: 5%;
-	width: 50%;
-}
-
-.nalog-actions_part  {
-	display: flex;
-	flex-wrap: nowrap;
-}
-
-.nalog-actions_part-text {
-	font-family: "Roboto Regular";
-	color: #000000;
-	font-size: 18px;
-	font-weight: 400;
-	letter-spacing: 1px;
-	line-height: 150%;
-	margin: 0 0 0 18px;
-}
-
-.icon_down {
-	z-index: 3;
-	position: absolute;
-	right: 80%;
-	top: 2270px;
-	width: 150px;
-}
-
-.nalog-question-section {
-	padding: 0 50px;
-	margin-bottom: 100px;
-}
-
-.nalog-question_title {
-	font-family: "Roboto Regular";
-	color: #000000;
-	font-size: 28px;
-	font-weight: 400;
-	letter-spacing: 1px;
-	line-height: 130%;
-	width: 35%;
-	margin-bottom: 50px;
-}
-
-.nalog-question_blocks {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-.nalog-question_block {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	width: 48%;
-}
-
-.nalog-question_block:nth-child(2) {
-	margin-right: 0;
-}
-
-.nalog-question_article {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-	border: 2px solid;
-	border-color: #034899;
-	border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	margin-bottom: 20px;
-}
-
-.nalog-question-number {
-	font-family: "Roboto Regular";
-	color: #000000;
-	font-size: 20px;
-	font-weight: 400;
-	letter-spacing: 1px;
-	line-height: 150%;
-	margin-right: 15px;
-	margin-left: 10px;
-}
-
-.nalog-question-text {
-	font-family: "Roboto Regular";
-	color: #000000;
-	font-size: 18px;
-	font-weight: 400;
-	letter-spacing: 1px;
-	line-height: 150%;
-	position: relative;
-	width: 80%;
-	margin-right: 2%;
-	margin-top: auto;
-	margin-bottom: auto;
-}
-
-.hide {
-	display: none; 
-}
-
-.hide + .button_hidden_down ~ .nalog-question-text-hidden{
-	display: none;
-}
-
-.hide + .button_hidden_down {
-	padding: 0;
-	cursor: pointer;
-	display: inline-block; 
-	height: 37px;
-	margin-bottom: auto;
-	margin-top: auto;
-}
-
-.hide:checked + .button_hidden_down + .nalog-question-text-hidden {
-	display: block;
-	padding: 20px;
-	border-top: 2px solid;
-	border-color: #034899;
-	border-radius: 0 0 10px 10px;
-	-webkit-border-radius: 0 0 10px 10px;
-	-moz-border-radius: 0 0 10px 10px;
-	background-color: #F2F5F7;
-	z-index: 5;
-}
-
-.hide:checked + .button_hidden_down {
-	transform: rotate(180deg);
-}
-
-.hide:checked + .nalog-question_article {
-	border-radius: 10px 10px 0 0;
-	-webkit-border-radius: 10px 10px 0 0;
-	-moz-border-radius: 10px 10px 0 0;
-}
-
-.nalog-question-text-hidden {
-	font-family: "Roboto Regular";
-	color: #000000;
-	font-size: 18px;
-	font-weight: 400;
-	letter-spacing: 1px;
-	line-height: 150%;
-	position: relative;
-	width: 100%;
-}
-
-.nalog-question-text_item {
-	display: flex;
-	flex-wrap: nowrap;
-}
-
-.icon_row {
-	margin-right: 5px;
-	margin-top: 2%;
-	margin-bottom: auto;
-}
-
-.icon_alterra {
-	margin-right: 5px;
-	margin-top: 2%;
-	margin-bottom: auto;
-}
-
-.item_text {
-	margin: 0;
-	width: 90%;
-}
-
-.aside_card {
-	background-color: #f3f6f8;
-	padding: 50px 50px 50px 90px;
-	background-image: url(../images/card.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: right center;
-	margin-bottom: 120px;
-	height: 220px;
-	width: 70%;
-
-	display: flex;
-	flex-wrap: nowrap;
-}
-
-.aside_card-text {
-	font-family: "Roboto Regular";
-	color: #ffffff;
-	font-size: 22px;
-	font-weight: 400;
-	letter-spacing: 1px;
-	line-height: 150%;
-	width: 50%;
-	margin-top: auto;
-	margin-bottom: auto;
-	margin-left: 5%;
-}
-
 @media (min-width: 1201px) and (max-width: 1400px) {
 
-	.nalog_row_content-text {
-		width: 70%;
+	.private_club-card {
+		height: 280px;
+		margin-right: 5%;
 	}
 
-	.nalog-top-section {
-		padding: 40px 50px;
+	.private_club-loyalty-content {
+		width: 50%;
 	}
 
-	.nalog-explan_text {
-		margin: 0 5%;
+	.loyalty-content_title {
+		font-size: 26px;
 	}
 
-	.icon_top {
-		top: 710px;
+	.loyalty-content_text {
+		font-size: 22px;
 	}
 
-	.nalog-advantages__category {
-		width: 47%;
+	.icon-top {
+		top: 1050px;
+		width: 130px;
 	}
 
-	.nalog-advantages__category-icon {
-		margin-right: 30px;
+	.private_club-growth {
+		justify-content: space-between;
 	}
 
-	.nalog-score_item {
-		width: 400px;
-		padding: 20px 80px 30px 35px;
+	.private_club-growth_item:nth-child(2) + .private_club-growth_text {
+		width: 95%;
 	}
 
-	.nalog-score_item:nth-child(2) {
-		width: 400px;
-		padding: 20px 80px 30px 35px;
+	.private_club-growth_summ {
+		font-size: 36px;
+		margin: 0 0 25px;
 	}
 
-	.nalog-score_item_summ {
-		margin: 0 0 20px;
+	.card-loyalty_section__category {
+		margin-bottom: 40px;
+		margin-right: 4%;
 	}
 
-	.nalog-score_img {
-		height: 355px;
+	.card-loyalty_section__category-icon {
+		width: 55px;
 	}
 
-	.icon_down {
-		top: 2190px;
+	.card-loyalty_section__category-inform-name {
+		font-size: 22px;
+		margin: 0 0 15px;
 	}
 
-	.nalog-question_title {
-		width: 40%;
+	.card-loyalty_section__category-inform-text {
+		width: 95%;
 	}
 
-	.nalog-question-number {
-		margin-top: 50px;
-		margin-bottom: 50px;
+	.private_club-bonus_category-name {
+		margin: 20px auto 10px 20px;
+		font-size: 18px;
 	}
 
-	.hide {
-		display: none; 
+	.private_club-bonus_category-text {
+		line-height: 120%;
+		width: 80%;
 	}
 
-	.hide + .button_hidden_down ~ .nalog-question-text-hidden{
-		display: none;
+	.bonus_category-percent {
+		margin: auto 25px auto auto;
 	}
 
-	.hide + .button_hidden_down {
-		margin-bottom: 20px;
-		margin-top: auto;
+	.private_club-bonus_extra {
+		padding: 50px 0 55px 70px;
 	}
 
-	.hide:checked + .button_hidden_down {
-		transform: rotate(180deg);
+	.bonus_extra-item {
+		width: 30%;
+    	margin-right: 1%;
 	}
 
-	.hide:checked + .nalog-question_article {
-		border-radius: 10px 10px 0 0;
-		-webkit-border-radius: 10px 10px 0 0;
-		-moz-border-radius: 10px 10px 0 0;
+	.bonus_extra-item-number {
+		font-size: 94px;
 	}
 
-	.aside_card {
-		height: 200px;
+	.bonus_extra-item-number-text {
+		width: 90%;
+	}
+}
+
+@media (min-width: 1301px) and (max-width: 1400px) {
+
+	.private_club-growth_img{
+		height: 400px;
+		width: 60%;
 	}
 
-	.aside_card-text {
-		font-size: 20px;
+	.private_club-growth_item {
+		padding: 30px 35px 45px 55px;
+	}
+
+	.private_club-growth_item:nth-child(2) {
+		padding: 30px 35px 45px 50px;
+	}
+
+	.private_club-bonus_category {
+		background-image: url(../images/card-desk.jpg);
+		background-color: transparent;
+		height: 150px;
+		width: 255px;
+		margin-right: 35px;
+	}
+
+	.registration-section_option_img {
+		height: 330px;
+	}
+}  
+
+@media (min-width: 1201px) and (max-width: 1300px) {
+
+	.private_club-growth_img{
+		height: 380px;
+    	width: 60%;
+	}
+
+	.private_club-growth_item {
+		padding: 20px 30px 45px 50px;
+	}
+
+	.private_club-growth_item:nth-child(2) {
+		padding: 20px 30px 45px 50px;
+	}
+
+	.private_club-bonus_category {
+		background-image: url(../images/card-desk.jpg);
+		background-color: transparent;
+		height: 150px;
+		width: 255px;
+		margin-right: 15px;
+	}
+
+	.registration-section_option_img {
+		height: 300px;
 	}
 }
 
 @media (min-width: 961px) and (max-width: 1200px) {
 
-	.nalog_row_content-text {
-		width: 60%;
+	.menu-list {
+		font-size: 14px;
 	}
 
-	.container {
-		padding: 0 15px;
-		box-sizing: border-box;
+	.menu-list_item {
+		margin-right: 50px;
 	}
 
-	.nalog-top-section {
-		padding: 30px 50px;
+	.private_club-top-section {
+		margin-bottom: 80px;
+		padding: 50px 30px;
 	}
 
-	.nalog_row_content-title {
-		font-size: 36px;
-		margin: 20px 0 40px;
+	.private_club-row_content {
+		max-width: 55%;
 	}
 
-	.nalog_row_content-text {
-		font-size: 18px;
+	.private_club-row_content-title {
+		font-size: 34px;
+		line-height: 120%;
 	}
 
-	.nalog-explan {
-		margin: 0 30px 90px;
+	.card_name {
+		font-size: 74px;
 	}
 
-	.nalog-explan-block {
-		padding: 70px 0;
+	.icon_advantages {
+		width: 25px;
 	}
 
-	.nalog-explan_text {
-		font-size: 16px;
-		margin: 0 5%;
+	.card-advantages_part_text {
+		font-size: 22px;
+		margin: 3px 0 0;
 	}
 
-	.icon_top {
-		top: 610px;
-		width: 140px;
+	.private_club-loyalty {
+		padding: 0 30px;
+		margin-bottom: 80px;
 	}
 
-	.nalog-advantages {
-		padding: 0 50px;
-		margin-bottom: 90px;
+	.private_club-card {
+	    height: 300px;
+    	width: 400px;
+	    margin-right: 5%;
 	}
 
-	.nalog-section_title {
-		font-size: 24px;
+	.private_club-loyalty-content {
 		width: 50%;
+		padding-top: 20px;
 	}
 
-	.nalog-advantages__category {
-		margin-bottom: 30px;
+	.loyalty-content_title {
+		font-size: 26px;
+		letter-spacing: 1px;
+	    line-height: 120%;
+	    margin: 0 0 40px;
+	    width: 100%;
 	}
 
-	.nalog-advantages__category-icon {
-		margin-right: 30px;
-		width: 50px;
-		height: 50px;
+	.loyalty-content_text {
+		font-size: 22px;
+		width: 85%;
 	}
 
-	.nalog-advantages__category-inform-name {
-		font-size: 20px;
+	.icon-top {
+		top: 950px;
+    	width: 120px;
 	}
 
-	.nalog-advantages__category-inform-text {
-		font-size: 16px;
+	.private_club-growth {
+		padding-right: 30px;
+		margin-bottom: 80px;
 	}
 
-	.nalog-score {
-		margin-bottom: 90px;
-	}
-
-	.nalog-score_items {
-		margin-right: 20px;
-	}
-	
-
-	.nalog-score_item {
-		padding: 25px 50px 30px 30px;
-		width: 400px;
-
-	}
-
-	.nalog-score_item_summ {
-		font-size: 38px;
-		margin: 0 0 25px;
-	}
-
-	.nalog-score_item_text {
-		font-size: 16px;
-	}
-
-	.nalog-score_item:nth-child(2) {
-		padding: 25px 50px 30px 30px;
-		width: 400px;
-	}
-
-	.nalog-top-section {
-		padding: 30px 50px;
-		margin-bottom: 30px;
-	}
-
-	.nalog_row_content {
-		max-width: 80%;
-	}
-
-	.nalog_row_content-title {
-		font-size: 36px;
-		margin: 20px 0 40px;
-	}
-
-	.nalog_row_content-text {
-		font-size: 18px;
-	}
-
-	..nalog-explan {
-		margin: 0 20px 90px;
-	}
-
-	.nalog-explan-block {
-		padding: 60px 0;
-	}
-
-	.nalog-explan_text {
-		font-size: 16px;
-		margin: 0 20%;
-	}
-
-	.icon_top {
-		top: 580px;
-		width: 140px;
-	}
-
-	.nalog-advantages {
-		padding: 0 50px;
-		margin-bottom: 90px;
-	}
-
-	.nalog-section_title {
-		font-size: 24px;
-		width: 45%;
+	.private_club-card-loyalty_section {
+		padding: 0 30px;
 		margin-bottom: 40px;
 	}
 
-	.nalog-advantages__category {
-		margin-bottom: 30px;
+	.card-loyalty_section_title {
+		width: 100%;
 	}
 
-	.nalog-advantages__category-icon {
-		margin-right: 30px;
+	.card-loyalty_section__category {
+		margin-bottom: 40px;
+	}
+
+	.card-loyalty_section__category-icon {
 		width: 50px;
-		height: 50px;
+    	height: 50px;
 	}
 
-	.nalog-advantages__category-inform-name {
-		font-size: 20px;
-		margin: 0 0 15px;
+	.card-loyalty_section__category-inform-name {
+		font-size: 22px;
+		margin: 0 0 20px;
 	}
 
-	.nalog-advantages__category-inform-text {
+	.card-loyalty_section__category-inform-text {
 		font-size: 16px;
+		line-height: 120%;
+		width: 90%;
 	}
 
-	.nalog-score {
-		margin-bottom: 90px;
+	.private_club-bonus {
+		padding: 0 30px;
+    	margin-bottom: 10px;
 	}
 
-	.nalog-score_items {
-		margin-right: 20px;
+	.private_club-bonus_categories {
+		display: flex;
+	    flex-wrap: wrap;
+	    flex-direction: inherit;
+	    justify-content: space-between;
+	    padding: 0 100px;
 	}
 
-	.nalog-score_item {
-		padding: 25px 50px 30px 30px;
-		width: 300px;
+	.private_club-bonus_category {
+		margin-right: 0;
+    	margin-bottom: 30px;
 	}
 
-	.nalog-score_item:nth-child(2) {
-		padding: 25px 50px 30px 30px;
-		width: 300px;
+	.private_club-bonus_extra {
+		padding: 20px 0 40px 45px;
+		margin-left: 30px;
+    	margin-bottom: 40px;
 	}
 
-	.nalog-score_item_summ {
-		font-size: 38px;
-		margin: 0 0 25px;
-	}
-
-	.nalog-score_item_text {
-		font-size: 16px;
-	}
-
-	.nalog-score_img {
-		height: 360px;
-	}
-
-	.nalog-actions-section {
-		margin: 0 20px 90px;
-	}
-
-	.nalog-actions-section_block {
-		padding: 60px 0;
-	}
-
-	.nalog-actions_title {
-		font-size: 24px;
-		width: 50%;
-		margin: 0 1% 0 30px;
-	}
-
-	.nalog-actions {
+	.bonus_extra-item {
 		margin-right: 4%;
 	}
 
-	.nalog-actions_part-text {
-		font-size: 16px;
-		margin: 0 0 0 15px;
+	.bonus_extra-item-number {
+		font-size: 88px;
+		margin: 0 auto 20px 0;
 	}
 
-	.icon_down {
-		top: 1910px;
-		width: 140px;
+	.bonus_extra-item-number-text {
+		line-height: 120%;
 	}
 
-	.nalog-question-section { 
-		margin-bottom: 70px;
+	.private_club-bonus_calculation {
+		padding: 0 30px;
+    	margin-bottom: 80px;
 	}
 
-	.nalog-question_title {
-		font-size: 24px;
-		margin-bottom: 40px;
-		width: 50%;
-	}
-
-	.nalog-question-number {
-		font-size: 18px;
-		margin-right: 12px;
-		margin-top: 35px;
-		margin-bottom: 35px;
-	}
-
-	.nalog-question-text {
-		font-size: 16px;
-		width: 75%;
-	}
-
-	.hide + .button_hidden_down {
-		margin-bottom: 10px;
-		margin-top: auto;
-	}
-
-	.nalog-question-text-hidden {
-		font-size: 16px;
-	}
-
-	.aside_card {
-		padding: 50px 40px 40px 70px;
-		height: 200px;
+	.bonus_calculation-name {
 		width: 80%;
 	}
 
-	.aside_card-text {
-		font-size: 20px;
-		line-height: 130%;
-		margin-left: 2%;
+	.private_club-registration {
+		padding: 0 100px;
+    	margin-bottom: 60px;
+	}
+
+	.registration-section_option {
+		width: 46%;
+	}
+
+	.icon-down {
+		width: 120px;
+		bottom: 540px;
+	}
+
+	.private_club-questions {
+		padding: 0 30px;
+    	margin-bottom: 80px;
+	}
+
+	.private_club-questions_search {
+		width: 100%;
+	}
+
+	.search__field {
+		padding: 10px;
+	}
+
+	.search__icon-button {
+		padding: 10px;
+	}
+
+	.private_club-questions-box_item {
+		padding-bottom: 15px;
+    	padding-top: 15px;
+	}
+}
+
+@media (min-width: 1101px) and (max-width: 1200px) {
+
+	.private_club-growth_img {
+		width: 60%;
+    	height: 360px;
+    	margin-right: 30px;
+	}
+
+	.private_club-growth_item {
+		padding: 15px 25px 30px 50px;
+		margin-bottom: 20px;
+	}
+
+	.private_club-growth_item:nth-child(2) {
+		padding: 15px 25px 30px 50px;
+	}
+
+	.private_club-growth_summ {
+		margin: 0 0 15px;
+	}
+
+	.private_club-growth_text {
+		width: 90%;
+	}
+
+	.registration-section_option_img {
+		height: 290px;
+	}
+}
+
+@media (min-width: 1001px) and (max-width: 1100px) {
+
+	.private_club-growth_img {
+		width: 60%;
+    	height: 325px;
+    	margin-right: 30px;
+	}
+
+	.private_club-growth_item {
+		padding: 10px 25px 25px 40px;
+		margin-bottom: 25px;
+	}
+
+	.private_club-growth_item:nth-child(2) {
+		padding: 10px 25px 25px 40px;
+	}
+
+	.private_club-growth_summ {
+		margin: 0 0 10px;
+	}
+
+	.private_club-growth_text {
+		width: 90%;
+		line-height: 120%;
+	}
+
+	.registration-section_option_img {
+		height: 260px;
+	}
+}
+
+@media (min-width: 961px) and (max-width: 1000px) {
+
+	.private_club-growth_img {
+		width: 60%;
+    	height: 290px;
+    	margin-right: 20px;
+	}
+
+	.private_club-growth_item {
+		padding: 5px 20px 25px 40px;
+		margin-bottom: 10px;
+	}
+
+	.private_club-growth_item:nth-child(2) {
+		padding: 5px 35px 25px 40px;
+	}
+
+	.private_club-growth_summ {
+		margin: 0 0 10px;
+	}
+
+	.private_club-growth_text {
+		font-size: 16px;
+		line-height: 120%;
+	}
+
+	.registration-section_option_img {
+		height: 240px;
 	}
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
 
-	.nalog_row_content-text {
-		width: 60%;
+	.menu-list {
+		font-size: 12px;
 	}
 
-	.nalog-top-section {
-		background-color: #f3f6f8;
-		padding: 30px 40px;
-		background-image: url(../images/house_960.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
-		margin-bottom: 30px;
+	.menu-list_item {
+		margin-right: 40px;
 	}
 
-	.h1-title {
-		font-size: 16px;
-		margin: 0 0 15px;
+	.private_club-top-section {
+		margin-bottom: 50px;
+    	padding: 0;
 	}
 
-	.nalog_row_content {
-		max-width: 85%;
+	.private_club_row {
+		padding: 30px 25px;
 	}
 
-	.nalog_row_content-title {
+	.private_club-row_content {
+		max-width: 75%;
+	}
+
+	.private_club-row_content-title {
 		font-size: 32px;
-		margin: 10px 0 30px;
+		line-height: 120%;
+		width: 80%;
+		margin: 20px 0 40px;
 	}
 
-	.nalog_row_content-text {
-		font-size: 16px;
-		margin: 0 0 15px;
-		letter-spacing: 0.5px;
+	.card_name {
+		font-size: 62px;
 	}
 
-	.nalog-explan {
-		margin: 0 15px 70px;
-		border-radius: 5px;
+	.card-advantages_part {
+		margin-bottom: 20px;
 	}
 
-	.nalog-explan-block {
-		padding: 40px 0;
-	}
-
-	.nalog-explan_text {
-		font-size: 16px;
-		margin: 0 15%;
-		line-height: 140%;
-	}
-
-	.nalog-advantages {
-		padding: 0 30px;
-		margin-bottom: 40px;
-	}
-
-	.nalog-section_title {
-		font-size: 22px;
-		width: 60%;
-		margin-bottom: 40px;
-	}
-
-	.nalog-advantages_categories {
-		flex-direction: column;
-	}
-
-	.nalog-advantages__category {
-		margin-bottom: 30px;
-		width: 95%;
-	}
-
-	.nalog-advantages__category-icon {
+	.icon_advantages {
+		width: 22px;
+		height: 22px;
 		margin-right: 20px;
-		width: 40px;
-		height: 40px;
-		margin-top: 5%;
 	}
 
-	.nalog-advantages__category-inform-name {
-		font-size: 18px;
-		line-height: 130%;
-		margin: 0 0 10px;
+	.card-advantages_part_text {
+		font-size: 20px;
+		margin: 0;
 	}
 
-	.nalog-advantages__category-inform-text {
-		font-size: 16px;
+	.private_club-loyalty {
+		padding: 0 25px;
+	    margin-bottom: 70px;
+	    flex-wrap: wrap;
+	    flex-direction: column-reverse;
 	}
 
-	.nalog-score {
-		margin-bottom: 70px;
+	.private_club-card {
+	    height: 200px;
+	    width: 310px;
+	    margin-right: auto;
+	}
+
+	.private_club-loyalty-content {
+		width: 100%;
+		padding-top: 0;
 		flex-wrap: wrap;
-		padding-left: 30px;
-
-		background-color: #f3f6f8;
-		padding: 30px 30px;
-		background-image: url(../images/pic__.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: left center;
-		margin-bottom: 70px;
+    	flex-direction: column;
 	}
 
-	.nalog-score_items {
-		flex-direction: row;
-		margin-right: 0;
+	.loyalty-content_title {
+		font-size: 24px;
+		letter-spacing: 1px;
+	    line-height: 120%;
+	    margin: 0 0 20px;
+	    width: 100%;
+	}
+
+	.loyalty-content_text {
+		font-size: 18px;
+	    width: 100%;
+	    margin-bottom: 35px;
+	}
+
+	.icon-top {
+		top: 850px;
+    	width: 110px;
+	}
+
+	.private_club-growth {
+		padding-right: 25px;
+		margin-bottom: 70px;
+		flex-wrap: nowrap;
+    	flex-direction: column-reverse;
+	}
+
+	.private_club-growth_items {
+		margin-bottom: 25px;
+		padding-left: 15%;
+	}
+
+	.private_club-growth_item {
+		padding: 20px 35px 30px 60px;
+	}
+
+	.private_club-growth_item:nth-child(2) {
+		padding: 20px 35px 30px 60px;
+	}
+
+	.private_club-growth_summ {
+		font-size: 38px;
+		margin: 0 0 15px;
+	}
+
+	.private_club-card-loyalty_section {
+		padding: 0 25px;
+		margin-bottom: 40px;
+	}
+
+	.card-loyalty_section_title {
+		width: 100%;
+		font-size: 24px;
+	}
+
+	.card-loyalty_section_categories {
 		justify-content: space-between;
 	}
 
-	.nalog-score_item {
-		padding: 15px 40px 20px 25px;
-		margin-bottom: 140px;
-		width: 35%;
+	.card-loyalty_section__category {
+		margin-bottom: 30px;
+		margin-right: 0;
+		width: 45%;
 	}
 
-	.icon_row {
-		margin-top: 1%;
+	.card-loyalty_section__category:last-child {
+	    margin-right: auto;
+	    margin-left: auto;
+	    padding-left: 25%;
 	}
 
-	.nalog-score_item:nth-child(2) {
-		width: 40%;
-		padding: 15px 25px 20px 40px;
-		margin-top: 120px;
+	.card-loyalty_section__category-icon {
+		width: 45px;
+    	height: 45px;
 	}
 
-	.nalog-score_item_summ {
-		font-size: 34px;
-		margin: 0 0 20px;
+	.card-loyalty_section__category-inform-name {
+		font-size: 18px;
+		margin: 0 0 10px;
 	}
 
-	.nalog-score_item_text {
+	.card-loyalty_section__category-inform-text {
 		font-size: 16px;
-	}
-
-	.nalog-score_img {
-		display: none;
-	}
-
-	.nalog-actions-section {
-		margin: 0 15px 70px;
-		border-radius: 5px;
-		-webkit-border-radius: 5px;
-		-moz-border-radius: 5px;
-	}
-
-	.nalog-actions-section_block {
-		padding: 40px 30px;
-		flex-wrap: wrap;
-	}
-
-	.nalog-actions_title {
-		font-size: 22px;
-		width: 100%;
-		margin: 0 0 40px 0;
-	}
-
-	.nalog-actions {
-		margin: 0;
-		width: 95%;
-	}
-
-	.nalog-actions_part-text {
-		font-size: 16px;
-		line-height: 130%;
-		margin: 0 0 0 20px;
-		margin-top: 1%;
-	}
-
-	.nalog-question-section {
-		padding: 0 30px;
-		margin-bottom: 50px;
-	}
-
-	.nalog-question_title {
-		width: 60%;
-		font-size: 22px;
-		margin: 0 0 40px 0;
-	}
-
-	.nalog-question_blocks {
-		flex-direction: column;
-	}
-
-	.nalog-question_block {
-		width: 100%;
-	}
-
-	.nalog-question_article {
-		padding: 0;
-		position: relative;
-	}
-
-	.nalog-question-number {
-		font-size: 16px;
-		margin: 20px 15px;
-	}
-
-	.nalog-question-text {
-		font-size: 16px;
-		line-height: 130%;
-		width: 80%;
-	}
-
-	.button_hidden {
-		width: 30px;
-		height: 30px;
-	}
-
-	.hide + .button_hidden_down {
-		height: 30px;
-		margin-right: 15px;
-		margin-left: auto;
-	}
-
-	.hide:checked + .button_hidden_down + .nalog-question-text-hidden {
-		padding: 15px;
-		margin-top: 10px;
-	}
-
-	.nalog-question-text-hidden {
-		font-size: 16px;
-	}
-
-	.aside_card {
-		padding: 30px;
-		margin-bottom: 70px;
-		position: relative;
+		line-height: 120%;
 		width: 90%;
 	}
 
-	.aside_card-text {
-		font-size: 18px;
-		line-height: 130%;
+	.private_club-bonus {
+		padding: 0 25px;
+    	margin-bottom: 10px;
 	}
 
-	.aside_card-pic {
-		width: 380px;
-		margin-top: 40px;
-		height: 200px;
+	.private_club-bonus_title {
+		font-size: 24px;
+	}
+
+	.private_club-bonus_categories {
+		display: flex;
+	    flex-wrap: wrap;
+	    flex-direction: column;
+	    padding: 0;
+	}
+
+	.private_club-bonus_category {
+		margin-left: auto;
+    	margin-right: auto;
+    	margin-bottom: 30px;
+	}
+
+	.private_club-bonus_category:last-child {
+		margin-left: auto;
+    	margin-right: auto;
+	}
+
+	.private_club-bonus_extra {
+		padding: 20px 0 40px 45px;
+		margin-left: 25px;
+    	margin-bottom: 40px;
+	}
+
+	.bonus_extra-item {
+		margin-right: 6%;
+	}
+
+	.bonus_extra-item-number {
+		font-size: 74px;
+		margin: 0 auto 10px 0;
+	}
+
+	.bonus_extra-item-number-text {
+		line-height: 120%;
+		font-size: 16px;
+	}
+
+	.private_club-bonus_calculation {
+		padding: 0 30px;
+    	margin-bottom: 80px;
+	}
+
+	.bonus_calculation-name {
+		width: 80%;
+		font-size: 22px;
+		margin-bottom: 40px;
+		line-height: 120%;
+	}
+
+	.private_club-registration {
+		padding: 0 25px;
+	    margin-bottom: 40px;
+	}
+
+	.private_club-registration-title {
+		font-size: 24px;
+	}
+
+	.registration-section {
+		display: flex;
+	    flex-wrap: wrap;
+	    flex-direction: column;
+	}
+
+	.registration-section_option {
+		width: 440px;
+		margin-right: auto;
+    	margin-left: auto;
+    	margin-bottom: 30px;
+	}
+
+	.registration-section_option_name {
+		font-size: 20px;
+	}
+
+	.registration-section_option_text {
+		font-size: 16px;
+		width: 90%;
+	}
+
+	.section_option_text-item {
+		margin: 0 0 10px;
+	}
+
+	.icon-down {
+		width: 110px;
+		bottom: 540px;
+	}
+
+	.private_club-questions-title {
+		font-size: 24px;
+	}
+
+	.private_club-questions {
+		padding: 0 30px;
+    	margin-bottom: 80px;
+	}
+
+	.private_club-questions_search {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+
+	.search__field {
+		padding: 10px;
+	}
+
+	.button_down {
+	    width: 40px;
+	    height: 40px;
+	    margin-right: 30px;
+	}
+
+	.private_club-questions-box_item-text {
+		font-size: 20px;
+	}
+
+	.search__icon-button {
+		padding: 10px;
+	}
+
+	.private_club-questions-box_item {
+		padding-bottom: 15px;
+    	padding-top: 15px;
 	}
 }
 
-@media (min-width: 831px) and (max-width: 960px) {
+@media (min-width: 801px) and (max-width: 960px) {
 
-	.icon_top {
-		right: 3%;
-		top: 470px;
-		width: 110px;
-	}
-
-	.icon_down {
-		right: 3%;
-		top: 1850px;
-		width: 120px;
+	.private_club-top-section {
+    	background-image: url(../images/woman_tablet.jpg);
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
 	}
 }
 
-@media (min-width: 641px) and (max-width: 831px) {
+@media (min-width: 641px) and (max-width: 800px) {
 
-	.icon_top {
-		right: 3%;
-		top: 500px;
-		width: 110px;
+	.private_club-top-section {
+    	background-image: url(../images/back_tabletII.jpg);
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: right center;
 	}
+}
 
-	.icon_down {
-		right: 3%;
-		top: 1950px;
-		width: 120px;
+@media (min-width: 901px) and (max-width: 960px) {
+	
+	.private_club-growth_img {
+		position: relative;
+	    margin-right: 0;
+	    height: 385px;
+	    width: 85%;
+	}
+}
+
+@media (min-width: 801px) and (max-width: 900px) {
+	
+	.private_club-growth_img {
+		position: relative;
+	    margin-right: 0;
+	    height: 370px;
+	    width: 85%;
+	}
+}
+
+@media (min-width: 701px) and (max-width: 800px) {
+	
+	.private_club-growth_img {
+		position: relative;
+	    margin-right: 0;
+	    height: 320px;
+	    width: 85%;
+	}
+}
+
+@media (min-width: 641px) and (max-width: 700px) {
+	
+	.private_club-growth_img {
+		position: relative;
+	    margin-right: 0;
+	    height: 280px;
+	    width: 85%;
 	}
 }
 
 @media (max-width: 640px) {
 
-	.h1-title {
-		font-size: 16px;
-	}
-
-	.nalog-top-section {
-		background-color: #f3f6f8;
-		padding: 0;
-		margin-bottom: 30px;
-	}
-
-	.nalog_row {
-		background: rgba(0, 0, 0, 0.6);
-		padding: 20px;
-	}
-
-	.nalog_row_content {
-		max-width: 100%;
-	}
-
-	.nalog_row_content-title {
-		font-size: 24px;
-		margin: 10px 0 30px;
-		color: white;
-	}
-
-	.nalog_row_content-text {
-		font-size: 16px;
-		line-height: 120%;
-		margin: 0 0 15px;
-		width: 100%;
-		color: white;
-	}
-
-	.nalog-explan {
-		margin: 0 0 50px;
-		border-radius: 5px;
-	}
-
-	.nalog-explan-block {
-		padding: 20px;
-	}
-
-	.nalog-explan_text {
-		font-size: 16px;
-		line-height: 130%;
-		margin-top: auto;
-		margin-bottom: auto;
-		margin-right: 0;
-		margin-left: 0;
-	}
-
-	.nalog-advantages {
-		padding: 0 20px;
-		margin-bottom: 30px;
-	}
-
-	.nalog-section_title {
-		font-size: 20px;
-		width: 100%;
-		margin: 10px 0 30px;
-	}
-
-	.nalog-advantages_categories {
+	.menu-list {
+		font-size: 12px;
 		flex-direction: column;
 	}
 
-	.nalog-advantages__category {
+	.menu-list_item {
+		margin-right: auto;
+	    margin-left: auto;
+	    margin-bottom: 15px;
+	}
+
+	.menu-list_item:last-child {
+		margin-right: auto;
+	    margin-left: auto;
+	    margin-bottom: 0;
+	}
+
+	.private_club-top-section {
 		margin-bottom: 20px;
+    	padding: 0;
+	}
+
+	.private_club_row {
+		padding: 20px;
+		background: rgba(0, 0, 0, 0.3);
+	}
+
+	.private_club-row_content {
+		max-width: 100%;
+	}
+
+	.private_club-row_content-title {
+		font-size: 30px;
+		line-height: 120%;
+		width: 90%;
+		margin: 20px 0 40px;
+		color: #ffffff;
+	}
+
+	.card_name {
+		font-size: 58px;
+	}
+
+	.card-advantages {
+		width: 90%;
+	}
+
+	.card-advantages_part {
+		margin-bottom: 15px;
+	}
+
+	.icon_advantages {
+		width: 18px;
+	    height: 18px;
+	    margin-right: 15px;
+	}
+
+	.card-advantages_part_text {
+		font-size: 18px;
+	    margin: 0;
+	    color: #ffffff;
+	}
+
+	.private_club-loyalty {
+		padding: 0 20px;
+	    margin-bottom: 50px;
+	    flex-wrap: wrap;
+	    flex-direction: column-reverse;
+	}
+
+	.private_club-card {
+	    height: 200px;
+	    width: 310px;
+	    margin-right: auto;
+	}
+
+	.private_club-loyalty-content {
 		width: 100%;
+		padding-top: 0;
+		flex-wrap: wrap;
+    	flex-direction: column;
 	}
 
-	.nalog-advantages__category-icon {
-		margin-right: 20px;
-		width: 40px;
-		height: 40px;
-		margin-top: 10%;
+	.loyalty-content_title {
+		font-size: 22px;
+		letter-spacing: 1px;
+	    line-height: 120%;
+	    margin: 0 0 20px;
+	    width: 95%;
 	}
 
-	.nalog-advantages__category-inform-name {
+	.loyalty-content_text {
+		font-size: 18px;
+	    width: 100%;
+	    margin-bottom: 35px;
+	}
+
+	.icon-top {
+		display: none;
+	}
+
+	.private_club-growth {
+		padding-right: 20px;
+		margin-bottom: 60px;
+		flex-wrap: nowrap;
+    	flex-direction: column-reverse;
+	}
+
+	.private_club-growth_img {
+		width: 350px;
+		padding-right: 0;
+	}
+
+	.private_club-growth_items {
+		margin-bottom: 25px;
+		padding-left: 15%;
+	}
+
+	.private_club-growth_item {
+		padding: 10px 25px 20px 30px;
+		margin-bottom: 15px;
+	}
+
+	.private_club-growth_item:nth-child(2) {
+		padding: 10px 25px 20px 30px;
+	}
+
+	.private_club-growth_summ {
+		font-size: 32px;
+    	margin: 0 0 10px;
+	}
+
+	.private_club-card-loyalty_section {
+		padding: 0 20px;
+		margin-bottom: 20px;
+	}
+
+	.private_club-growth_text {
+		font-size: 16px;
+	}
+
+	.card-loyalty_section_title {
+		width: 100%;
+		font-size: 22px;
+		margin-bottom: 30px;
+	}
+
+	.card-loyalty_section_categories {
+		justify-content: space-between;
+	}
+
+	.card-loyalty_section__category {
+		margin-bottom: 25px;
+		margin-right: 0;
+		width: 45%;
+	}
+
+	.card-loyalty_section__category:last-child {
+	    margin-right: auto;
+	    margin-left: 0;
+	    padding-left: 0;
+	}
+
+	.card-loyalty_section__category-icon {
+		width: 35px;
+    	height: 35px;
+	}
+
+	.card-loyalty_section__category-inform-name {
+		font-size: 18px;
+		margin: 0 0 5px;
+	}
+
+	.card-loyalty_section__category-inform-text {
+		font-size: 14px;
+		line-height: 120%;
+		width: 90%;
+	}
+
+	.private_club-bonus {
+		padding: 0 20px;
+    	margin-bottom: 10px;
+	}
+
+	.private_club-bonus_title {
+		font-size: 22px;
+		margin-bottom: 30px;
+	}
+
+	.private_club-bonus_categories {
+		display: flex;
+	    flex-wrap: wrap;
+	    flex-direction: column;
+	    padding: 0;
+	}
+
+	.private_club-bonus_category {
+		margin-left: auto;
+    	margin-right: auto;
+    	margin-bottom: 20px;
+
+    	background-image: url(../images/card_mobile.jpg);
+    	background-repeat: no-repeat;
+	}
+
+	.private_club-bonus_category:last-child {
+		margin-left: auto;
+    	margin-right: auto;
+	}
+
+	.private_club-bonus_category-name {
+		font-size: 20px;
+		margin: 40px auto 30px 20px;
+	}
+
+	.private_club-bonus_extra {
+		padding: 25px 10px 30px 45px;
+	    margin-left: 20px;
+	    flex-direction: column;
+	    margin-bottom: 30px;
+	}
+
+	.bonus_extra-item {
+		margin-right: 0;
+    	margin-bottom: 35px;
+    	width: 100%;
+	}
+
+	.bonus_extra-item:last-child {
+		margin-bottom: 0;
+	}
+
+	.bonus_extra-item-number {
+		font-size: 66px;
+		margin: 0 auto 10px 0;
+	}
+
+	.bonus_extra-item-number-text {
+		line-height: 120%;
+		font-size: 14px;
+		width: 90%;
+	}
+
+	.private_club-bonus_calculation {
+		padding: 0 20px;
+    	margin-bottom: 50px;
+	}
+
+	.bonus_calculation-name {
+		width: 100%;
+	    font-size: 20px;
+	    margin-bottom: 30px;
+		line-height: 120%;
+	}
+
+	.bonus_calculation-items {
+		display: flex;
+	    flex-wrap: wrap;
+	    flex-direction: column;
+	}
+
+	.bonus_calculation-item {
+		margin-bottom: 15px;
+		margin-right: auto;
+    	margin-left: auto;
+
+    	padding: 0; /*Кнопки переделать*/
+	}
+
+	.bonus_calculation-item:last-child {
+		margin-bottom: 0;
+		margin-right: auto;
+    	margin-left: auto;
+	}
+
+	.private_club-registration {
+		padding: 0 20px;
+	    margin-bottom: 20px;
+	}
+
+	.private_club-registration-title {
+		font-size: 22px;
+		margin-bottom: 30px;
+	}
+
+	.registration-section {
+		display: flex;
+	    flex-wrap: wrap;
+	    flex-direction: column;
+	}
+
+	.registration-section_option {
+		width: 300px;
+		margin-right: auto;
+    	margin-left: auto;
+    	margin-bottom: 30px;
+	}
+
+	.registration-section_option_img {
+		height: 200px;
+		margin-bottom: 25px;
+	}
+
+	.registration-section_option_name {
 		font-size: 18px;
 		margin: 0 0 10px;
 	}
 
-	.nalog-advantages__category-inform-text {
-		font-size: 16px;
-		line-height: 130%;
+	.registration-section_option_text {
+		font-size: 14px;
+		width: 90%;
 	}
 
-	.nalog-score {
-		padding: 0 20px;
-		margin-bottom: 50px;
-		flex-direction: column;
-		flex-wrap: nowrap;
-	}
-
-	.nalog-score_items {
-		margin-right: 0;
-	}
-
-	.nalog-score_item {
-		padding: 20px 40px 30px 20px;
-		margin-bottom: 20px;
-		width: inherit;
-	}
-
-	.icon_row {
-		margin-top: 3%;
-	}
-
-	.nalog-score_item:nth-child(2) {
-		padding: 20px 20px 30px 40px;
-		margin-bottom: 20px;
-		width: inherit;
-	}
-
-	.nalog-score_item_summ {
-		font-size: 30px;
-		margin: 0 0 20px;
-	}
-
-	.nalog-score_item_text {
-		font-size: 16px
-	}
-
-	.nalog-score_img {
-		display: inline;
-		width: 100%;
-	}
-
-	.nalog-actions-section {
-		margin: 0 0 50px;
-		border-radius: 5px;
-		-webkit-border-radius: 5px;
-		-moz-border-radius: 5px;
-	}
-
-	.nalog-actions-section_block {
-		padding: 30px 20px;
-		flex-wrap: wrap;
-	}
-
-	.nalog-actions_title {
-		font-size: 20px;
-		width: 100%;
-		margin: 0 0 30px 0;
-	}
-
-	.nalog-actions {
-		margin: 0;
-		width: 100%;
-	}
-
-	.nalog-actions_part-text {
-		font-size: 16px;
-		line-height: 130%;
-		margin: 5px 0 0 15px;
-		width: 80%;
-	}
-
-	.nalog-question-section {
-		padding: 0 20px;
-		margin-bottom: 30px;
-	}
-
-	.nalog-question_title {
-		width: 100%;
-		font-size: 20px;
-		margin: 0 0 30px 0;
-	}
-
-	.nalog-question_blocks {
-		flex-direction: column;
-	}
-
-	.nalog-question_block {
-		width: 100%;
-	}
-
-	.nalog-question_article {
-		padding: 0;
-		position: relative;
-	}
-
-	.nalog-question-number {
-		font-size: 16px;
-	}
-
-	.nalog-question-text {
-		font-size: 16px;
-		line-height: 130%;
-		width: 65%;
-	}
-
-	.button_hidden {
-		width: 32px;
-		height: 32px;
-	}
-
-	.hide + .button_hidden_down {
-		height: 30px;
-		margin-right: 10px;
-		margin-left: auto;
-	}
-
-	.hide:checked + .button_hidden_down + .nalog-question-text-hidden {
-		padding: 15px;
-		margin-top: 10px;
-	}
-
-	.nalog-question-text-hidden {
-		font-size: 16px;
-	}
-
-	.aside_card {
-		padding: 20px 30px 20px 20px;
-		margin-bottom: 50px;
-		position: relative;
-		width: auto;
-		flex-direction: column-reverse;
-	}
-
-	.aside_card-text {
-		font-size: 16px;
-		line-height: 120%;
-		margin-left: 0;
-		width: 100%;
-		margin-top: 0;
-		margin-bottom: auto;
-	}
-
-	.aside_card-pic {
-		width: 260px;
-		position: absolute;
-		height: 120px;
-	}
-
-	.icon_top {
-		display: none;
-	}
-
-	.icon_down {
-		display: none;
-	}
-}
-
-@media (max-width: 480px) {
-	.nalog-score_img {
-		display: none;
-	}
-}
-
-@media (max-width: 340px) {
-
-	.h1-title {
-		font-size: 16px;
-	}
-
-	.nalog-top-section {
-		background-color: #f3f6f8;
-		padding: 0;
-		margin-bottom: 30px;
-	}
-
-	.nalog_row {
-		background: rgba(0, 0, 0, 0.6);
-		padding: 20px;
-	}
-
-	.nalog_row_content {
-		max-width: 100%;
-	}
-
-	.nalog_row_content-title {
-		font-size: 24px;
-		margin: 10px 0 30px;
-	}
-
-	.nalog_row_content-text {
-		font-size: 16px;
-		line-height: 120%;
-		margin: 0 0 15px;
-		width: 100%;
-	}
-
-	.nalog-explan {
-		margin: 0 0 50px;
-		border-radius: 5px;
-	}
-
-	.nalog-explan-block {
-		padding: 50px 20px;
-	}
-
-	.nalog-explan_text {
-		font-size: 16px;
-		line-height: 130%;
-		margin-top: auto;
-		margin-bottom: auto;
-		margin-right: 0;
-		margin-left: 0;
-	}
-
-	.nalog-advantages {
-		padding: 0 20px;
-		margin-bottom: 30px;
-	}
-
-	.nalog-section_title {
-		font-size: 20px;
-		width: 100%;
-		margin: 10px 0 30px;
-	}
-
-	.nalog-advantages_categories {
-		flex-direction: column;
-	}
-
-	.nalog-advantages__category {
-		margin-bottom: 20px;
-		width: 100%;
-	}
-
-	.nalog-advantages__category-icon {
-		margin-right: 20px;
-		width: 40px;
-		height: 40px;
-		margin-top: 10%;
-	}
-
-	.nalog-advantages__category-inform-name {
-		font-size: 18px;
+	.section_option_text-item {
 		margin: 0 0 10px;
 	}
 
-	.nalog-advantages__category-inform-text {
-		font-size: 16px;
-		line-height: 130%;
-	}
-
-	.nalog-score {
-		padding: 0 20px;
-		margin-bottom: 50px;
-		flex-direction: column;
-		flex-wrap: nowrap;
-	}
-
-	.nalog-score_items {
-		margin-right: 0;
-	}
-
-	.nalog-score_item {
-		padding: 20px 40px 30px 20px;
-		margin-bottom: 20px;
-		width: inherit;
-	}
-
-	.icon_row {
-		margin-top: 3%;
-	}
-
-	.nalog-score_item:nth-child(2) {
-		padding: 20px 20px 30px 40px;
-		margin-bottom: 20px;
-		width: inherit;
-	}
-
-	.nalog-score_item_summ {
-		font-size: 30px;
-		margin: 0 0 20px;
-	}
-
-	.nalog-score_item_text {
-		font-size: 16px
-	}
-
-	.nalog-score_img {
+	.icon-down {
 		display: none;
-		width: 100%;
 	}
 
-	.nalog-actions-section {
-		margin: 0 0 50px;
-		border-radius: 5px;
-		-webkit-border-radius: 5px;
-		-moz-border-radius: 5px;
+	.private_club-questions-title {
+		font-size: 22px;
+		margin: 0 0 30px;
 	}
 
-	.nalog-actions-section_block {
-		padding: 50px 30px;
-		flex-wrap: wrap;
-	}
-
-	.nalog-actions_title {
-		font-size: 20px;
-		width: 100%;
-		margin: 0 0 30px 0;
-	}
-
-	.nalog-actions {
-		margin: 0;
-		width: 100%;
-	}
-
-	.nalog-actions_part-text {
-		font-size: 16px;
-		line-height: 130%;
-		margin: 5px 0 0 15px;
-		width: 80%;
-	}
-
-	.nalog-question-section {
+	.private_club-questions {
 		padding: 0 20px;
+    	margin-bottom: 50px;
+	}
+
+	.private_club-questions_search {
+		width: 100%;
 		margin-bottom: 30px;
 	}
 
-	.nalog-question_title {
-		width: 100%;
-		font-size: 20px;
-		margin: 0 0 30px 0;
+	.search__field {
+		padding: 10px;
+		font-size: 14px;
 	}
 
-	.nalog-question_blocks {
-		flex-direction: column;
+	.button_down {
+	    width: 35px;
+	    height: 35px;
+	    margin-right: 25px;
 	}
 
-	.nalog-question_block {
-		width: 100%;
+	.private_club-questions-box_item-text {
+		font-size: 18px;
+		margin: 5px 0 0;
 	}
 
-	.nalog-question_article {
-		padding: 0;
-		position: relative;
+	.search__icon-button {
+		padding: 10px;
 	}
 
-	.nalog-question-number {
-		font-size: 16px;
+	.search__icon {
+		width: 20px;
 	}
 
-	.nalog-question-text {
-		font-size: 16px;
-		line-height: 130%;
-		width: 60%;
-	}
-
-	.button_hidden {
-		width: 32px;
-		height: 32px;
-	}
-
-	.hide + .button_hidden_down {
-		height: 30px;
-		margin-right: 10px;
-		margin-left: auto;
-		margin-bottom: 20px;
-	}
-
-	.hide:checked + .button_hidden_down + .nalog-question-text-hidden {
-		padding: 15px;
-		margin-top: 10px;
-	}
-
-	.nalog-question-text-hidden {
-		font-size: 16px;
-	}
-
-	.aside_card {
-		padding: 20px 30px 20px 20px;
-		margin-bottom: 50px;
-		position: relative;
-		width: auto;
-		flex-direction: column-reverse;
-	}
-
-	.aside_card-text {
-		font-size: 16px;
-		line-height: 120%;
-		margin-left: 0;
-		width: 100%;
-		margin-top: 0;
-		margin-bottom: auto;
-	}
-
-	.aside_card-pic {
-		width: 260px;
-		position: absolute;
-		height: 100px;
-	}
-
-	.icon_top {
-		display: none;
-	}
-
-	.icon_down {
-		display: none;
+	.private_club-questions-box_item {
+		padding-bottom: 10px;
+    	padding-top: 10px;
 	}
 }
