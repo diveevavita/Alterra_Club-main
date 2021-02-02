@@ -1865,6 +1865,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	.private_club-growth_img {
 		width: 350px;
 		padding-right: 0;
+		display: none;
 	}
 
 	.private_club-growth_items {
