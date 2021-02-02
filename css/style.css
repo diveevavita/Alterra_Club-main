@@ -156,7 +156,7 @@ body {
 	color: #000000;
 	font-size: 36px;
 	font-weight: 700;
-	margin: 20px 0 60px;
+	margin: 0 0 60px;
 	display: flex;
 	flex-wrap: wrap;
 	letter-spacing: 1px;
@@ -165,7 +165,7 @@ body {
 
 .card_name {
 	color: #034899;
-	font-size: 82px;
+	font-size: 76px;
 	font-weight: 700;
 	text-transform: capitalize;
 	padding: 20px 0;
@@ -182,7 +182,7 @@ body {
 .card-advantages_part {
 	display: flex;
 	flex-wrap: nowrap;
-	margin-bottom: 28px;
+	margin-bottom: 20px;
 }
 
 .card-advantages_part:last-child {
