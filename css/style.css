@@ -2010,7 +2010,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	}
 
 	.bonus_calculation-items {
-		display: flex;
+		display: none;
 	    flex-wrap: wrap;
 	    flex-direction: column;
 	}
