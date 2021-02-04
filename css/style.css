@@ -690,28 +690,63 @@ body {
 	flex-wrap: nowrap;
 }
 
+.bonus_calculation-item__ {
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 2%;
+
+    width: 35%;
+}
+
+.bonus_calculation-item__:last-child {
+	margin-right: 0;
+}
+
 .bonus_calculation-item {
 	display: flex;
 	flex-direction: column-reverse;
+	outline: none;
 	padding: 25px;
+	height: 30px;
 	border: 2px solid;
 	border-color: #034899;
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
-	outline: none;
-
-	width: 350px;
-	margin-right: 3%;
 }
 
-.bonus_calculation-item:last-child {
-	margin-right: 0;
+.bonus_calculation-item_choise {
+	display: flex;
+	flex-direction: row;
+	outline: none;
+	padding: 25px;
+	height: 30px;
+	border: 2px solid;
+	border-color: #034899;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+.hide_but {
+	display: none;
+}
+
+.button_hidden_down {
+	width: 30px;
+	height: 30px;
+	margin-left: 5%;
+}
+
+.button_hidden {
+	width: 30px;
+	height: 30px;
 }
 
 .bonus_calculation-item_text-hidden {
 	display: none;
-	margin-bottom: 10px;
+	margin: 0 0 10px;
 	color: #615B5B;
 	font-size: 14px;
 }
@@ -723,7 +758,7 @@ body {
 	font-weight: 400;
 	letter-spacing: 1px;
 	line-height: 140%;
-	margin: 0;
+	margin: auto;
 	outline: none;
 	border: none;
     width: 100%;
@@ -751,21 +786,32 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	display: block;
 }
 
+.bonus_calculation-item ~ .bonus_calculation-item_text:active {
+	padding: 0;
+}
 
-
-
-
-.__select__input {
+.hide_but + .button_hidden_down ~ .bonus_calculation-item_hidden-cards {
 	display: none;
 }
 
-.cards-hidden_block {
-	display: none;
+.hide_but + .button_hidden_down {
+	cursor: pointer;
 }
 
-.__select__input:focus + .__select__label + .cards-hidden_block {
-	display: block;
+.hide_but:checked + .button_hidden_down +.bonus_calculation-item_hidden-cards {
+	display: flex;
+	flex-direction: column;
 }
+
+.bonus_calculation-item_hidden-card {
+
+}
+
+
+
+
+
+
 
 
 
@@ -1118,6 +1164,14 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	.bonus_extra-item-number-text {
 		width: 90%;
 	}
+
+	.bonus_calculation-item {
+		padding: 25px 10px;
+	}
+
+	.bonus_calculation-item_text {
+		font-size: 14px;
+	}
 }
 
 @media (min-width: 1301px) and (max-width: 1400px) {
@@ -1333,6 +1387,27 @@ input:focus:-ms-input-placeholder { color:transparent; }
 		width: 80%;
 	}
 
+	.bonus_calculation-items {
+		flex-direction: column;
+	}
+
+	.bonus_calculation-item__ {
+		margin-right: auto;
+    	margin-left: auto;
+    	margin-bottom: 2%;
+    	width: 50%;
+	}
+
+	.bonus_calculation-item__:last-child {
+		margin-right: auto;
+    	margin-left: auto;
+    	margin-bottom: 0;
+	}
+
+	.bonus_calculation-item {
+		padding: 25px;
+	}
+
 	.private_club-registration {
 		padding: 0 60px;
     	margin-bottom: 60px;
@@ -1468,10 +1543,6 @@ input:focus:-ms-input-placeholder { color:transparent; }
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
-
-	.bonus_calculation-items {
-		display: none;
-	}
 
 	.menu-list {
 		font-size: 12px;
@@ -1681,6 +1752,27 @@ input:focus:-ms-input-placeholder { color:transparent; }
 		font-size: 22px;
 		margin-bottom: 40px;
 		line-height: 120%;
+	}
+
+	.bonus_calculation-items {
+		flex-direction: column;
+	}
+
+	.bonus_calculation-item__ {
+		margin-right: auto;
+    	margin-left: auto;
+    	margin-bottom: 2%;
+    	width: 75%;
+	}
+
+	.bonus_calculation-item__:last-child {
+		margin-right: auto;
+    	margin-left: auto;
+    	margin-bottom: 0;
+	}
+
+	.bonus_calculation-item {
+		padding: 25px;
 	}
 
 	.private_club-registration {
@@ -2190,23 +2282,28 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	}
 
 	.bonus_calculation-items {
-		display: none;
-	    flex-wrap: wrap;
-	    flex-direction: column;
+		flex-direction: column;
+	}
+
+	.bonus_calculation-item__ {
+		margin-right: auto;
+    	margin-left: auto;
+    	margin-bottom: 2%;
+    	width: 90%;
+	}
+
+	.bonus_calculation-item__:last-child {
+		margin-right: auto;
+    	margin-left: auto;
+    	margin-bottom: 0;
 	}
 
 	.bonus_calculation-item {
-		margin-bottom: 15px;
-		margin-right: auto;
-    	margin-left: auto;
-
-    	padding: 0; /*Кнопки переделать*/
+		padding: 25px;
 	}
 
-	.bonus_calculation-item:last-child {
-		margin-bottom: 0;
-		margin-right: auto;
-    	margin-left: auto;
+	.bonus_calculation-item_text {
+		font-size: 14px;
 	}
 
 	.private_club-registration {
@@ -2626,23 +2723,36 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	}
 
 	.bonus_calculation-items {
-		display: none;
-	    flex-wrap: wrap;
-	    flex-direction: column;
+		flex-direction: column;
+	}
+
+	.bonus_calculation-item__ {
+		margin-right: auto;
+    	margin-left: auto;
+    	margin-bottom: 7%;
+    	width: 100%;
+	}
+
+	.bonus_calculation-item__:last-child {
+		margin-right: auto;
+    	margin-left: auto;
+    	margin-bottom: 0;
 	}
 
 	.bonus_calculation-item {
-		margin-bottom: 15px;
-		margin-right: auto;
-    	margin-left: auto;
-
-    	padding: 0; /*Кнопки переделать*/
+		padding: 25px 15px;
 	}
 
-	.bonus_calculation-item:last-child {
-		margin-bottom: 0;
-		margin-right: auto;
-    	margin-left: auto;
+	.bonus_calculation-item_choise {
+		padding: 25px 15px;
+	}
+
+	.bonus_calculation-item_text {
+		font-size: 14px;
+	}
+
+	.bonus_calculation-item_text-hidden {
+		font-size: 12px;
 	}
 
 	.private_club-registration {
@@ -3066,23 +3176,36 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	}
 
 	.bonus_calculation-items {
-		display: none;
-	    flex-wrap: wrap;
-	    flex-direction: column;
+		flex-direction: column;
+	}
+
+	.bonus_calculation-item__ {
+		margin-right: auto;
+    	margin-left: auto;
+    	margin-bottom: 7%;
+    	width: 100%;
+	}
+
+	.bonus_calculation-item__:last-child {
+		margin-right: auto;
+    	margin-left: auto;
+    	margin-bottom: 0;
 	}
 
 	.bonus_calculation-item {
-		margin-bottom: 15px;
-		margin-right: auto;
-    	margin-left: auto;
-
-    	padding: 0; /*Кнопки переделать*/
+		padding: 25px 15px;
 	}
 
-	.bonus_calculation-item:last-child {
-		margin-bottom: 0;
-		margin-right: auto;
-    	margin-left: auto;
+	.bonus_calculation-item_choise {
+		padding: 25px 15px;
+	}
+
+	.bonus_calculation-item_text {
+		font-size: 14px;
+	}
+
+	.bonus_calculation-item_text-hidden {
+		font-size: 12px;
 	}
 
 	.private_club-registration {
