@@ -128,12 +128,12 @@ body {
 
 .private_club-top-section {
 	background-color: #f3f6f8;
-	padding: 70px 50px;
+	padding: 40px 50px;
 	background-image: url(../images/background_woman.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	margin-bottom: 120px;
+	margin-bottom: 50px;
 }
 
 .private_club_row {
@@ -147,25 +147,26 @@ body {
 }
 
 .private_club-row_content {
-	max-width: 45%;
+	max-width: 55%;
 }
 
 .private_club-row_content-title {
 	font-family: "Roboto Regular";
 	text-transform: uppercase;
 	color: #000000;
-	font-size: 36px;
+	font-size: 30px;
 	font-weight: 700;
-	margin: 0 0 60px;
+	margin: 0 0 50px;
 	display: flex;
 	flex-wrap: wrap;
 	letter-spacing: 1px;
-	line-height: 130%;
+	line-height: 120%;
+	width: 65%;
 }
 
 .card_name {
 	color: #034899;
-	font-size: 76px;
+	font-size: 74px;
 	font-weight: 700;
 	text-transform: capitalize;
 	padding: 20px 0;
@@ -182,7 +183,7 @@ body {
 .card-advantages_part {
 	display: flex;
 	flex-wrap: nowrap;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 
 .card-advantages_part:last-child {
@@ -190,14 +191,16 @@ body {
 }
 
 .icon_advantages {
-	margin-right: 25px;
+	margin-right: 20px;
+	width: 25px;
+    height: 25px;
 }
 
 .card-advantages_part_text {
 	font-family: "Roboto Regular";
 	text-transform: capitalize;
 	color: #000000;
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 400;
 	letter-spacing: 1px;
 	line-height: 120%;
@@ -217,6 +220,11 @@ body {
 	padding: 18px 26px;
 	cursor: pointer;
 	outline: none;
+	margin-right: 5%;
+}
+
+.button_card:last-child {
+	margin-right: 0;
 }
 
 .button_card:hover {
@@ -283,7 +291,7 @@ body {
 	z-index: 3;
 	position: absolute;
 	right: 5%;
-	top: 1100px;
+	top: 800px;
 	width: 150px;
 }
 
@@ -802,6 +810,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	display: flex;
 	flex-direction: column;
 	width: 44%;
+	justify-content: space-around;
 }
 
 .registration-section_option_img {
@@ -829,10 +838,45 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	font-weight: 400;
 	letter-spacing: 1px;
 	line-height: 140%;
+	margin-bottom: 40px;
+	justify-content: space-around;
+}
+
+.registration-section_option_button {
+	height: auto;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "Roboto Regular";
+    background-color: #F44336;
+    border-radius: 5px;
+    border-color: #F44336;
+    padding: 20px 15px;
+    cursor: pointer;
+    outline: none;
+    width: 75%;
+}
+
+.registration-section_option_button:hover {
+	color: #F44336;
+	background: transparent;
+}
+
+.registration-section_option_button:active {
+	color: #F44336;
+	background: transparent;
+	border-color: #F44336;
+	border-radius: 5px;
+	outline: none;
 }
 
 .section_option_text-item {
 	margin: 0 0 20px;
+}
+
+.section_option_text-item:last-child {
+	margin: 0;
 }
 
 .text-item-number {
@@ -979,6 +1023,18 @@ input:focus:-ms-input-placeholder { color:transparent; }
 
 @media (min-width: 1201px) and (max-width: 1400px) {
 
+	.private_club-top-section {
+		background-position: left center;
+	}
+
+	.private_club-row_content-title {
+		width: 60%;
+	}
+
+	.private_club-row_content {
+		max-width: 65%;
+	}
+
 	.private_club-card {
 		height: 280px;
 		margin-right: 5%;
@@ -997,7 +1053,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	}
 
 	.icon-top {
-		top: 1050px;
+		top: 800px;
 		width: 130px;
 	}
 
@@ -1132,20 +1188,26 @@ input:focus:-ms-input-placeholder { color:transparent; }
 
 	.private_club-top-section {
 		margin-bottom: 80px;
-		padding: 50px 30px;
+		padding: 40px 30px;
 	}
 
 	.private_club-row_content {
-		max-width: 55%;
+		max-width: 65%;
 	}
 
 	.private_club-row_content-title {
-		font-size: 34px;
+		font-size: 30px;
 		line-height: 120%;
+		width: 70%;
 	}
 
 	.card_name {
-		font-size: 74px;
+		font-size: 72px;
+	}
+
+	.button_card {
+		margin-right: 3%;
+		font-size: 18px;
 	}
 
 	.icon_advantages {
@@ -1153,7 +1215,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	}
 
 	.card-advantages_part_text {
-		font-size: 22px;
+		font-size: 20px;
 		margin: 3px 0 0;
 	}
 
@@ -1187,7 +1249,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	}
 
 	.icon-top {
-		top: 950px;
+		top: 830px;
     	width: 120px;
 	}
 
@@ -1272,7 +1334,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	}
 
 	.private_club-registration {
-		padding: 0 100px;
+		padding: 0 60px;
     	margin-bottom: 60px;
 	}
 
@@ -1280,9 +1342,14 @@ input:focus:-ms-input-placeholder { color:transparent; }
 		width: 46%;
 	}
 
+	.registration-section_option_button {
+	    font-size: 16px;
+	    width: 85%;
+	}
+
 	.icon-down {
 		width: 120px;
-		bottom: 540px;
+		bottom: 510px;
 	}
 
 	.private_club-questions {
@@ -1402,9 +1469,9 @@ input:focus:-ms-input-placeholder { color:transparent; }
 
 @media (min-width: 641px) and (max-width: 960px) {
 
-.bonus_calculation-items {
-	display: none;
-}
+	.bonus_calculation-items {
+		display: none;
+	}
 
 	.menu-list {
 		font-size: 12px;
@@ -1424,32 +1491,30 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	}
 
 	.private_club-row_content {
-		max-width: 75%;
-	}
-
-	.private_club-row_content-title {
-		font-size: 32px;
-		line-height: 120%;
-		width: 80%;
-		margin: 20px 0 40px;
+		max-width: 60%;
 	}
 
 	.card_name {
-		font-size: 62px;
+		font-size: 58px;
+		padding: 15px 0;
+	}
+
+	.card-advantages {
+		margin-bottom: 35px;
 	}
 
 	.card-advantages_part {
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 	}
 
 	.icon_advantages {
-		width: 22px;
-		height: 22px;
-		margin-right: 20px;
+		width: 20px;
+	    height: 20px;
+	    margin-right: 10px;
 	}
 
 	.card-advantages_part_text {
-		font-size: 20px;
+		font-size: 18px;
 		margin: 0;
 	}
 
@@ -1478,7 +1543,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 		letter-spacing: 1px;
 	    line-height: 120%;
 	    margin: 0 0 20px;
-	    width: 100%;
+	    width: 80%;
 	}
 
 	.loyalty-content_text {
@@ -1488,7 +1553,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	}
 
 	.icon-top {
-		top: 850px;
+		top: 700px;
     	width: 110px;
 	}
 
@@ -1620,7 +1685,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 
 	.private_club-registration {
 		padding: 0 25px;
-	    margin-bottom: 40px;
+	    margin-bottom: 80px;
 	}
 
 	.private_club-registration-title {
@@ -1637,7 +1702,11 @@ input:focus:-ms-input-placeholder { color:transparent; }
 		width: 440px;
 		margin-right: auto;
     	margin-left: auto;
-    	margin-bottom: 30px;
+    	margin-bottom: 50px;
+	}
+
+	.registration-section_option:last-child {
+		margin-bottom: 0;
 	}
 
 	.registration-section_option_name {
@@ -1647,10 +1716,16 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	.registration-section_option_text {
 		font-size: 16px;
 		width: 90%;
+		margin-bottom: 30px;
 	}
 
 	.section_option_text-item {
 		margin: 0 0 10px;
+	}
+
+	.registration-section_option_button {
+	    font-size: 16px;
+	    width: 70%;
 	}
 
 	.icon-down {
@@ -1696,67 +1771,145 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	}
 }
 
-@media (min-width: 801px) and (max-width: 960px) {
-
+@media (min-width: 901px) and (max-width: 960px) {
+	
 	.private_club-top-section {
     	background-image: url(../images/woman_tablet.jpg);
 	    background-repeat: no-repeat;
 	    background-size: cover;
 	    background-position: center;
 	}
-}
 
-@media (min-width: 641px) and (max-width: 800px) {
-
-	.private_club-top-section {
-    	background-image: url(../images/back_tabletII.jpg);
-	    background-repeat: no-repeat;
-	    background-size: cover;
-	    background-position: right center;
+	.button_card {
+		height: 58px;
+		padding: 15px 20px;
+		font-size: 16px;
 	}
-}
 
-@media (min-width: 901px) and (max-width: 960px) {
-	
 	.private_club-growth_img {
 		position: relative;
 	    margin-right: 0;
 	    height: 385px;
 	    width: 85%;
 	}
+
+	.private_club-row_content-title {
+		font-size: 24px;
+		line-height: 120%;
+		width: 70%;
+		margin: 0 0 40px;
+	}
 }
 
 @media (min-width: 801px) and (max-width: 900px) {
 	
+	.private_club-top-section {
+    	background-image: url(../images/woman_tablet.jpg);
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	}
+
+	.button_card {
+		width: 250px;
+		height: 55px;
+	    padding: 10px;
+	    font-size: 16px;
+	    margin-bottom: 3%;
+	}
+
+	.button_card:last-child {
+		margin-bottom: 0;
+	}
+
 	.private_club-growth_img {
 		position: relative;
 	    margin-right: 0;
 	    height: 370px;
 	    width: 85%;
 	}
+
+	.private_club-row_content-title {
+		font-size: 26px;
+		line-height: 120%;
+		width: 90%;
+		margin: 0 0 40px;
+	}
 }
 
 @media (min-width: 701px) and (max-width: 800px) {
 	
+	.private_club-top-section {
+    	background-image: url(../images/back_tabletII.jpg);
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: right center;
+	}
+
+	.button_card {
+		width: 250px;
+		height: auto;
+	    padding: 15px 10px;
+	    font-size: 16px;
+	    margin-bottom: 3%;
+	}
+
+	.button_card:last-child {
+		margin-bottom: 0;
+	}
+
 	.private_club-growth_img {
 		position: relative;
 	    margin-right: 0;
 	    height: 320px;
 	    width: 85%;
 	}
+
+	.private_club-row_content-title {
+		font-size: 26px;
+		line-height: 120%;
+		width: 90%;
+		margin: 0 0 40px;
+	}
 }
 
 @media (min-width: 641px) and (max-width: 700px) {
 	
+	.private_club-top-section {
+    	background-image: url(../images/back_tabletII.jpg);
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: right center;
+	}
+
+	.button_card {
+		width: 250px;
+		height: auto;
+	    padding: 15px 10px;
+	    font-size: 16px;
+	    margin-bottom: 3%;
+	}
+
+	.button_card:last-child {
+		margin-bottom: 0;
+	}
+
 	.private_club-growth_img {
 		position: relative;
 	    margin-right: 0;
 	    height: 280px;
 	    width: 85%;
 	}
+
+	.private_club-row_content-title {
+		font-size: 24px;
+		line-height: 120%;
+		width: 100%;
+		margin: 0 0 40px;
+	}
 }
 
-@media (max-width: 640px) {
+@media (min-width: 481px) and (max-width: 640px) {
 
 	.menu-list {
 		font-size: 12px;
@@ -1766,7 +1919,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	.menu-list_item {
 		margin-right: auto;
 	    margin-left: auto;
-	    margin-bottom: 15px;
+	    margin-bottom: 10px;
 	}
 
 	.menu-list_item:last-child {
@@ -1776,37 +1929,39 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	}
 
 	.private_club-top-section {
-		margin-bottom: 20px;
+		margin-bottom: 30px;
     	padding: 0;
 	}
 
 	.private_club_row {
 		padding: 20px;
-		background: rgba(0, 0, 0, 0.3);
+		background: rgba(255, 255, 255, 0.2);
 	}
 
 	.private_club-row_content {
-		max-width: 100%;
+		max-width: 90%;
 	}
 
 	.private_club-row_content-title {
-		font-size: 30px;
+		font-size: 24px;
 		line-height: 120%;
-		width: 90%;
-		margin: 20px 0 40px;
-		color: #ffffff;
+		width: 100%;
+		margin: 0 0 40px;
+		color: #000000;
 	}
 
 	.card_name {
-		font-size: 58px;
+		font-size: 56px;
+		padding: 15px 0;
 	}
 
 	.card-advantages {
 		width: 90%;
+		margin-bottom: 30px;
 	}
 
 	.card-advantages_part {
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 	}
 
 	.icon_advantages {
@@ -1816,9 +1971,22 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	}
 
 	.card-advantages_part_text {
-		font-size: 18px;
+		font-size: 16px;
 	    margin: 0;
-	    color: #ffffff;
+	    color: #000000;
+	}
+
+	.button_card {
+		height: auto;
+	    width: 270px;
+	    font-size: 16px;
+	    padding: 10px 10px;
+	    margin-bottom: 3%;
+	    margin-right: 0;
+	}
+
+	.button_card:last-child {
+		margin-bottom: 0;
 	}
 
 	.private_club-loyalty {
@@ -1845,14 +2013,14 @@ input:focus:-ms-input-placeholder { color:transparent; }
 		font-size: 22px;
 		letter-spacing: 1px;
 	    line-height: 120%;
-	    margin: 0 0 20px;
+	    margin: 0 0 15px;
 	    width: 95%;
 	}
 
 	.loyalty-content_text {
 		font-size: 18px;
-	    width: 100%;
-	    margin-bottom: 35px;
+	    width: 80%;
+	    margin-bottom: 30px;
 	}
 
 	.icon-top {
@@ -1879,11 +2047,12 @@ input:focus:-ms-input-placeholder { color:transparent; }
 
 	.private_club-growth_item {
 		padding: 10px 25px 20px 30px;
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 	}
 
 	.private_club-growth_item:nth-child(2) {
 		padding: 10px 25px 20px 30px;
+		margin-bottom: 0;
 	}
 
 	.private_club-growth_summ {
@@ -1893,7 +2062,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 
 	.private_club-card-loyalty_section {
 		padding: 0 20px;
-		margin-bottom: 20px;
+		margin-bottom: 45px;
 	}
 
 	.private_club-growth_text {
@@ -1907,25 +2076,31 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	}
 
 	.card-loyalty_section_categories {
-		justify-content: space-between;
+		justify-content: center;
+    	flex-direction: column;
 	}
 
 	.card-loyalty_section__category {
-		margin-bottom: 25px;
+		margin-bottom: 30px;
 		margin-right: 0;
-		width: 45%;
+		width: 100%;
 	}
 
 	.card-loyalty_section__category:last-child {
 	    margin-right: auto;
-	    margin-left: 0;
+	    margin-left: auto;
 	    padding-left: 0;
+	    margin-bottom: 0;
+	}
+
+	.card-loyalty_section__category:nth-child(3n+3) {
+		margin-right: auto;
 	}
 
 	.card-loyalty_section__category-icon {
-		width: 35px;
-    	height: 35px;
-	}
+		width: 45px;
+    	height: 45px;
+    }
 
 	.card-loyalty_section__category-inform-name {
 		font-size: 18px;
@@ -2036,7 +2211,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 
 	.private_club-registration {
 		padding: 0 20px;
-	    margin-bottom: 20px;
+	    margin-bottom: 80px;
 	}
 
 	.private_club-registration-title {
@@ -2054,7 +2229,11 @@ input:focus:-ms-input-placeholder { color:transparent; }
 		width: 300px;
 		margin-right: auto;
     	margin-left: auto;
-    	margin-bottom: 30px;
+    	margin-bottom: 40px;
+	}
+
+	.registration-section_option:last-child {
+		margin-bottom: 0;
 	}
 
 	.registration-section_option_img {
@@ -2070,10 +2249,18 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	.registration-section_option_text {
 		font-size: 14px;
 		width: 90%;
+		margin-bottom: 20px;
 	}
 
 	.section_option_text-item {
 		margin: 0 0 10px;
+		width: 95%;
+	}
+
+	.registration-section_option_button {
+	    font-size: 14px;
+	    padding: 15px 10px;
+	    width: 100%;
 	}
 
 	.icon-down {
@@ -2087,6 +2274,886 @@ input:focus:-ms-input-placeholder { color:transparent; }
 
 	.private_club-questions {
 		padding: 0 20px;
+    	margin-bottom: 50px;
+	}
+
+	.private_club-questions_search {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.search__field {
+		padding: 10px;
+		font-size: 14px;
+	}
+
+	.button_down {
+	    width: 35px;
+	    height: 35px;
+	    margin-right: 25px;
+	}
+
+	.private_club-questions-box_item-text {
+		font-size: 18px;
+		margin: 5px 0 0;
+	}
+
+	.search__icon-button {
+		padding: 10px;
+	}
+
+	.search__icon {
+		width: 20px;
+	}
+
+	.private_club-questions-box_item {
+		padding-bottom: 10px;
+    	padding-top: 10px;
+	}
+}
+
+@media (min-width: 341px) and (max-width: 480px){
+
+	.menu-list {
+		font-size: 12px;
+		flex-direction: column;
+	}
+
+	.menu-list_item {
+		margin-right: auto;
+	    margin-left: auto;
+	    margin-bottom: 10px;
+	}
+
+	.menu-list_item:last-child {
+		margin-right: auto;
+	    margin-left: auto;
+	    margin-bottom: 0;
+	}
+
+	.private_club-top-section {
+		margin-bottom: 30px;
+    	padding: 0;
+	}
+
+	.private_club_row {
+		padding: 20px;
+		background: rgba(255, 255, 255, 0.2);
+	}
+
+	.private_club-row_content {
+		max-width: 100%;
+	}
+
+	.private_club-row_content-title {
+		font-size: 20px;
+		line-height: 120%;
+		width: 100%;
+		margin: 0 0 30px;
+		color: #000000;
+	}
+
+	.card_name {
+		font-size: 46px;
+		padding: 15px 0;
+	}
+
+	.card-advantages {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.card-advantages_part {
+		margin-bottom: 5px;
+	}
+
+	.icon_advantages {
+		width: 5%;
+    	height: 15px;
+	    margin-right: 5px;
+	}
+
+	.card-advantages_part_text {
+		font-size: 14px;
+	    margin: 0;
+	    color: #000000;
+	}
+
+	.button_card {
+		height: auto;
+	    width: 100%;
+	    font-size: 14px;
+	    padding: 10px 10px;
+	    margin-bottom: 3%;
+	    margin-right: 0;
+	}
+
+	.button_card:last-child {
+		margin-bottom: 0;
+	}
+
+	.private_club-loyalty {
+		padding: 0 20px;
+	    margin-bottom: 50px;
+	    flex-wrap: wrap;
+	    flex-direction: column-reverse;
+	}
+
+	.private_club-card {
+	    height: 150px;
+	    width: 230px;
+	    margin-right: auto;
+	}
+
+	.private_club-loyalty-content {
+		width: 100%;
+		padding-top: 0;
+		flex-wrap: wrap;
+    	flex-direction: column;
+	}
+
+	.loyalty-content_title {
+		font-size: 22px;
+		letter-spacing: 1px;
+	    line-height: 120%;
+	    margin: 0 0 15px;
+	    width: 100%;
+	}
+
+	.loyalty-content_text {
+		font-size: 18px;
+	    width: 100%;
+	    margin-bottom: 30px;
+	    line-height: 118%;
+	}
+
+	.icon-top {
+		display: none;
+	}
+
+	.private_club-growth {
+		padding-right: 0;
+		margin-bottom: 60px;
+		flex-wrap: nowrap;
+    	flex-direction: column-reverse;
+	}
+
+	.private_club-growth_img {
+		width: 350px;
+		padding-right: 0;
+		display: none;
+	}
+
+	.private_club-growth_items {
+		margin-bottom: 0;
+		padding-left: 15%;
+	}
+
+	.private_club-growth_item {
+		padding: 10px 25px 20px 30px;
+		margin-bottom: 10px;
+	}
+
+	.private_club-growth_item:nth-child(2) {
+		padding: 10px 25px 20px 30px;
+		margin-bottom: 0;
+	}
+
+	.private_club-growth_summ {
+		font-size: 30px;
+    	margin: 0 0 10px;
+	}
+
+	.private_club-card-loyalty_section {
+		padding: 0 20px;
+		margin-bottom: 45px;
+	}
+
+	.private_club-growth_text {
+		font-size: 16px;
+		line-height: 120%;
+	}
+
+	.card-loyalty_section_title {
+		width: 100%;
+		font-size: 22px;
+		margin-bottom: 30px;
+	}
+
+	.card-loyalty_section_categories {
+		justify-content: center;
+    	flex-direction: column;
+	}
+
+	.card-loyalty_section__category {
+		margin-bottom: 30px;
+		margin-right: 0;
+		width: 100%;
+	}
+
+	.card-loyalty_section__category:last-child {
+	    margin-right: auto;
+	    margin-left: auto;
+	    padding-left: 0;
+	    margin-bottom: 0;
+	}
+
+	.card-loyalty_section__category:nth-child(3n+3) {
+		margin-right: auto;
+	}
+
+	.card-loyalty_section__category-icon {
+		width: 45px;
+    	height: 45px;
+    	margin-left: auto;
+    	margin-right: auto;
+    }
+
+	.card-loyalty_section__category-inform-name {
+		font-size: 18px;
+		margin: 0 auto 5px;
+		text-align: center;
+	}
+
+	.card-loyalty_section__category-inform-text {
+		font-size: 14px;
+		line-height: 120%;
+		width: 80%;
+	    text-align: center;
+	    margin-right: auto;
+	    margin-left: auto;
+	}
+
+	.private_club-bonus {
+		padding: 0 20px;
+    	margin-bottom: 10px;
+	}
+
+	.private_club-bonus_title {
+		font-size: 22px;
+		margin-bottom: 30px;
+	}
+
+	.private_club-bonus_categories {
+		display: flex;
+	    flex-wrap: wrap;
+	    flex-direction: column;
+	    padding: 0;
+	}
+
+	.private_club-bonus_category {
+		margin-left: auto;
+    	margin-right: auto;
+    	margin-bottom: 20px;
+    	width: 230px;
+    	height: 120px;
+
+    	background-image: url(../images/card_mobile-min.jpg);
+    	background-repeat: no-repeat;
+	}
+
+	.private_club-bonus_category:last-child {
+		margin-left: auto;
+    	margin-right: auto;
+	}
+
+	.bonus_category-content {
+		width: 60%;
+	}
+
+	.private_club-bonus_category-name {
+		font-size: 18px;
+    	margin: 10px auto 10px 15px;
+	}
+
+	.private_club-bonus_category-text {
+		font-size: 14px;
+		line-height: 120%;
+		width: 80%;
+		margin: 0 auto 0 15px;
+	}
+
+	.bonus_category-percent {
+		margin: auto 15px auto auto;
+	}
+
+	.bonus_category-percent-number {
+		font-size: 34px;
+	}
+
+	.bonus_category-percent-number-text {
+		font-size: 16px
+	}
+
+	.private_club-bonus_extra {
+		padding: 25px 10px 30px 45px;
+	    margin-left: 20px;
+	    flex-direction: column;
+	    margin-bottom: 30px;
+	}
+
+	.bonus_extra-item {
+		margin-right: 0;
+    	margin-bottom: 30px;
+    	width: 100%;
+	}
+
+	.bonus_extra-item:last-child {
+		margin-bottom: 0;
+	}
+
+	.bonus_extra-item-number {
+		font-size: 60px;
+		margin: 0 auto 10px 0;
+	}
+
+	.bonus_extra-item-number-text {
+		line-height: 120%;
+		font-size: 14px;
+		width: 85%;
+	}
+
+	.private_club-bonus_calculation {
+		padding: 0 20px;
+    	margin-bottom: 50px;
+	}
+
+	.bonus_calculation-name {
+		width: 100%;
+	    font-size: 20px;
+	    margin-bottom: 30px;
+		line-height: 120%;
+	}
+
+	.bonus_calculation-items {
+		display: none;
+	    flex-wrap: wrap;
+	    flex-direction: column;
+	}
+
+	.bonus_calculation-item {
+		margin-bottom: 15px;
+		margin-right: auto;
+    	margin-left: auto;
+
+    	padding: 0; /*Кнопки переделать*/
+	}
+
+	.bonus_calculation-item:last-child {
+		margin-bottom: 0;
+		margin-right: auto;
+    	margin-left: auto;
+	}
+
+	.private_club-registration {
+		padding: 0 20px;
+	    margin-bottom: 80px;
+	}
+
+	.private_club-registration-title {
+		font-size: 22px;
+		margin-bottom: 30px;
+	}
+
+	.registration-section {
+		display: flex;
+	    flex-wrap: wrap;
+	    flex-direction: column;
+	}
+
+	.registration-section_option {
+		width: 250px;
+		margin-right: auto;
+    	margin-left: auto;
+    	margin-bottom: 40px;
+	}
+
+	.registration-section_option:last-child {
+		margin-bottom: 0;
+	}
+
+	.registration-section_option_img {
+		height: 170px;
+		margin-bottom: 25px;
+	}
+
+	.registration-section_option_name {
+		font-size: 18px;
+		margin: 0 0 10px;
+	}
+
+	.registration-section_option_text {
+		font-size: 14px;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.section_option_text-item {
+		margin: 0 0 10px;
+		width: 95%;
+	}
+
+	.registration-section_option_button {
+	    font-size: 14px;
+	    padding: 15px 10px;
+	    width: 100%;
+	}
+
+	.icon-down {
+		display: none;
+	}
+
+	.private_club-questions-title {
+		font-size: 22px;
+		margin: 0 0 30px;
+	}
+
+	.private_club-questions {
+		padding: 0 20px;
+    	margin-bottom: 50px;
+	}
+
+	.private_club-questions_search {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.search__field {
+		padding: 10px;
+		font-size: 14px;
+	}
+
+	.button_down {
+	    width: 35px;
+	    height: 35px;
+	    margin-right: 25px;
+	}
+
+	.private_club-questions-box_item-text {
+		font-size: 18px;
+		margin: 5px 0 0;
+	}
+
+	.search__icon-button {
+		padding: 10px;
+	}
+
+	.search__icon {
+		width: 20px;
+	}
+
+	.private_club-questions-box_item {
+		padding-bottom: 10px;
+    	padding-top: 10px;
+	}
+}
+
+@media (max-width: 340px){
+
+	.menu-list {
+		font-size: 10px;
+		flex-direction: column;
+	}
+
+	.menu-list_item {
+		margin-right: auto;
+	    margin-left: auto;
+	    margin-bottom: 10px;
+	}
+
+	.menu-list_item:last-child {
+		margin-right: auto;
+	    margin-left: auto;
+	    margin-bottom: 0;
+	}
+
+	.private_club-top-section {
+		margin-bottom: 30px;
+    	padding: 0;
+	}
+
+	.private_club_row {
+		padding: 10px;
+		background: rgba(255, 255, 255, 0.2);
+	}
+
+	.private_club-row_content {
+		max-width: 100%;
+	}
+
+	.private_club-row_content-title {
+		font-size: 18px;
+		line-height: 120%;
+		width: 100%;
+		margin: 0 0 30px;
+		color: #000000;
+	}
+
+	.card_name {
+		font-size: 36px;
+		padding: 10px 0;
+	}
+
+	.card-advantages {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.card-advantages_part {
+		margin-bottom: 5px;
+	}
+
+	.icon_advantages {
+		width: 10px;
+	    height: 10px;
+	    margin-right: 5px;
+	}
+
+	.card-advantages_part_text {
+		font-size: 12px;
+	    margin: 0;
+	    color: #000000;
+	}
+
+	.button_card {
+		height: auto;
+	    width: 100%;
+	    font-size: 12px;
+	    padding: 10px 10px;
+	    margin-bottom: 3%;
+	    margin-right: 0;
+	}
+
+	.button_card:last-child {
+		margin-bottom: 0;
+	}
+
+	.private_club-loyalty {
+		padding: 0 10px;
+	    margin-bottom: 50px;
+	    flex-wrap: wrap;
+	    flex-direction: column-reverse;
+	}
+
+	.private_club-card {
+	    height: 150px;
+	    width: 230px;
+	    margin-right: auto;
+	}
+
+	.private_club-loyalty-content {
+		width: 100%;
+		padding-top: 0;
+		flex-wrap: wrap;
+    	flex-direction: column;
+	}
+
+	.loyalty-content_title {
+		font-size: 20px;
+		letter-spacing: 1px;
+	    line-height: 120%;
+	    margin: 0 0 15px;
+	    width: 100%;
+	}
+
+	.loyalty-content_text {
+		font-size: 16px;
+	    width: 100%;
+	    margin-bottom: 30px;
+	    line-height: 118%;
+	}
+
+	.icon-top {
+		display: none;
+	}
+
+	.private_club-growth {
+		padding-right: 0;
+		margin-bottom: 60px;
+		flex-wrap: nowrap;
+    	flex-direction: column-reverse;
+	}
+
+	.private_club-growth_img {
+		width: 350px;
+		padding-right: 0;
+		display: none;
+	}
+
+	.private_club-growth_items {
+		margin-bottom: 0;
+		padding-left: 0;
+	}
+
+	.private_club-growth_item {
+		padding: 10px 25px 20px 30px;
+		margin-bottom: 10px;
+	}
+
+	.private_club-growth_item:nth-child(2) {
+		padding: 10px 25px 20px 30px;
+		margin-bottom: 0;
+	}
+
+	.private_club-growth_summ {
+		font-size: 30px;
+    	margin: 0 0 10px;
+	}
+
+	.private_club-card-loyalty_section {
+		padding: 0 10px;
+		margin-bottom: 45px;
+	}
+
+	.private_club-growth_text {
+		font-size: 14px;
+		line-height: 120%;
+	}
+
+	.card-loyalty_section_title {
+		width: 100%;
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+
+	.card-loyalty_section_categories {
+		justify-content: center;
+    	flex-direction: column;
+	}
+
+	.card-loyalty_section__category {
+		margin-bottom: 30px;
+		margin-right: 0;
+		width: 100%;
+	}
+
+	.card-loyalty_section__category:last-child {
+	    margin-right: auto;
+	    margin-left: auto;
+	    padding-left: 0;
+	    margin-bottom: 0;
+	}
+
+	.card-loyalty_section__category:nth-child(3n+3) {
+		margin-right: auto;
+	}
+
+	.card-loyalty_section__category-icon {
+		width: 40px;
+    	height: 40px;
+    	margin-left: auto;
+    	margin-right: auto;
+    }
+
+	.card-loyalty_section__category-inform-name {
+		font-size: 16px;
+		margin: 0 auto 5px;
+		text-align: center;
+	}
+
+	.card-loyalty_section__category-inform-text {
+		font-size: 14px;
+		line-height: 120%;
+		width: 80%;
+	    text-align: center;
+	    margin-right: auto;
+	    margin-left: auto;
+	}
+
+	.private_club-bonus {
+		padding: 0 10px;
+    	margin-bottom: 10px;
+	}
+
+	.private_club-bonus_title {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+
+	.private_club-bonus_categories {
+		display: flex;
+	    flex-wrap: wrap;
+	    flex-direction: column;
+	    padding: 0;
+	}
+
+	.private_club-bonus_category {
+		margin-left: auto;
+    	margin-right: auto;
+    	margin-bottom: 20px;
+    	width: 230px;
+    	height: 120px;
+
+    	background-image: url(../images/card_mobile-min.jpg);
+    	background-repeat: no-repeat;
+	}
+
+	.private_club-bonus_category:last-child {
+		margin-left: auto;
+    	margin-right: auto;
+	}
+
+	.bonus_category-content {
+		width: 60%;
+	}
+
+	.private_club-bonus_category-name {
+		font-size: 18px;
+    	margin: 10px auto 10px 15px;
+	}
+
+	.private_club-bonus_category-text {
+		font-size: 14px;
+		line-height: 120%;
+		width: 80%;
+		margin: 0 auto 0 15px;
+	}
+
+	.bonus_category-percent {
+		margin: auto 15px auto auto;
+	}
+
+	.bonus_category-percent-number {
+		font-size: 34px;
+	}
+
+	.bonus_category-percent-number-text {
+		font-size: 16px
+	}
+
+	.private_club-bonus_extra {
+		padding: 25px 10px 30px 25px;
+	    margin-left: 0;
+	    flex-direction: column;
+	    margin-bottom: 30px;
+	}
+
+	.bonus_extra-item {
+		margin-right: 0;
+    	margin-bottom: 20px;
+    	width: 100%;
+	}
+
+	.bonus_extra-item:last-child {
+		margin-bottom: 0;
+	}
+
+	.bonus_extra-item-number {
+		font-size: 56px;
+		margin: 0 auto 10px 0;
+	}
+
+	.bonus_extra-item-number-text {
+		line-height: 120%;
+		font-size: 14px;
+		width: 85%;
+	}
+
+	.bonus_extra-sum {
+		font-size: 16px;
+	}
+
+	.private_club-bonus_calculation {
+		padding: 0 20px;
+    	margin-bottom: 50px;
+	}
+
+	.bonus_calculation-name {
+		width: 100%;
+	    font-size: 18px;
+	    margin-bottom: 30px;
+		line-height: 100%;
+	}
+
+	.bonus_calculation-items {
+		display: none;
+	    flex-wrap: wrap;
+	    flex-direction: column;
+	}
+
+	.bonus_calculation-item {
+		margin-bottom: 15px;
+		margin-right: auto;
+    	margin-left: auto;
+
+    	padding: 0; /*Кнопки переделать*/
+	}
+
+	.bonus_calculation-item:last-child {
+		margin-bottom: 0;
+		margin-right: auto;
+    	margin-left: auto;
+	}
+
+	.private_club-registration {
+		padding: 0 10px;
+	    margin-bottom: 80px;
+	}
+
+	.private_club-registration-title {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+
+	.registration-section {
+		display: flex;
+	    flex-wrap: wrap;
+	    flex-direction: column;
+	}
+
+	.registration-section_option {
+		width: 200px;
+		margin-right: auto;
+    	margin-left: auto;
+    	margin-bottom: 40px;
+	}
+
+	.registration-section_option:last-child {
+		margin-bottom: 0;
+	}
+
+	.registration-section_option_img {
+		height: 140px;
+		margin-bottom: 25px;
+	}
+
+	.registration-section_option_name {
+		font-size: 16px;
+		margin: 0 0 10px;
+	}
+
+	.text-item-number {
+		margin-right: 5px;
+	}
+
+	.registration-section_option_text {
+		font-size: 14px;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.section_option_text-item {
+		margin: 0 0 10px;
+		width: 95%;
+	}
+
+	.registration-section_option_button {
+	    font-size: 14px;
+	    padding: 15px 10px;
+	    width: 100%;
+	}
+
+	.icon-down {
+		display: none;
+	}
+
+	.private_club-questions-title {
+		font-size: 20px;
+		margin: 0 0 30px;
+	}
+
+	.private_club-questions {
+		padding: 0 10px;
     	margin-bottom: 50px;
 	}
 
