@@ -696,7 +696,8 @@ body {
     flex-direction: column;
     margin-right: 2%;
 
-    width: 35%;
+    margin-right: 20px;
+    width: 100%;
 }
 
 .bonus_calculation-item__:last-child {
@@ -718,15 +719,27 @@ body {
 
 .bonus_calculation-item_choise {
 	display: flex;
-	flex-direction: row;
-	outline: none;
-	padding: 25px;
-	height: 30px;
-	border: 2px solid;
-	border-color: #034899;
-	border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 2px solid;
+    border-color: #034899;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+.bonus_calculation-item_choise-text {
+	font-family: "Roboto Regular";
+    color: #504B4B;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 140%;
+    margin: 28px 0 25px 25px;
+    outline: none;
+    border: none;
+    width: 70%;
+    padding: 0;
 }
 
 .hide_but {
@@ -736,12 +749,12 @@ body {
 .button_hidden_down {
 	width: 30px;
 	height: 30px;
-	margin-left: 5%;
+	margin: 25px;
 }
 
 .button_hidden {
-	width: 30px;
-	height: 30px;
+	width: 35px;
+	height: 35px;
 }
 
 .bonus_calculation-item_text-hidden {
@@ -801,25 +814,57 @@ input:focus:-ms-input-placeholder { color:transparent; }
 .hide_but:checked + .button_hidden_down +.bonus_calculation-item_hidden-cards {
 	display: flex;
 	flex-direction: column;
+	border-top: 2px solid;
+	border-color: #034899;
+	width: 100%;
+}
+
+.bonus_calculation-item_hidden-card:first-child {
+	border-top: 0;
 }
 
 .bonus_calculation-item_hidden-card {
+	display: flex;
+	flex-wrap: nowrap;
+	padding: 20px 10px;
 
+	border-top: 2px solid;
+    border-color: #034899;
 }
 
+.bonus_calculation-item_hidden-card:hover {
+	cursor: pointer;
+}
 
+.item_hidden-card_text-name {
+	font-family: "Roboto Regular";
+    color: #034899;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 120%;
+    margin: 0 15px 0 0;
+}
 
+.item_hidden-card_text-summ {
+	font-family: "Roboto Regular";
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 120%;
+    margin: 2px 0 0 0;
+}
 
-
-
-
-
-
-
-
-
-
-
+.item_hidden-card_text-percent {
+	font-family: "Roboto Regular";
+	color: #034899;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 120%;
+    margin: 0 0 0 auto;
+}
 
 
 
@@ -1165,12 +1210,33 @@ input:focus:-ms-input-placeholder { color:transparent; }
 		width: 90%;
 	}
 
-	.bonus_calculation-item {
-		padding: 25px 10px;
+	.bonus_calculation-item_text {
+		font-size: 16px;
 	}
 
-	.bonus_calculation-item_text {
-		font-size: 14px;
+	.bonus_calculation-items {
+    	flex-direction: column;
+	}
+
+	.bonus_calculation-item {
+		padding: 25px;
+	}
+
+	.bonus_calculation-item__ {
+	    margin-right: auto;
+	    margin-left: auto;
+	    margin-bottom: 2%;
+	    width: 40%;
+	}
+
+	.bonus_calculation-item__:last-child {
+	    margin-right: auto;
+	    margin-left: auto;
+	    margin-bottom: 0;
+	}
+
+	.bonus_calculation-item_hidden-card {
+		padding: 20px;
 	}
 }
 
@@ -1387,25 +1453,33 @@ input:focus:-ms-input-placeholder { color:transparent; }
 		width: 80%;
 	}
 
+	.bonus_calculation-item_text {
+		font-size: 16px;
+	}
+
 	.bonus_calculation-items {
-		flex-direction: column;
-	}
-
-	.bonus_calculation-item__ {
-		margin-right: auto;
-    	margin-left: auto;
-    	margin-bottom: 2%;
-    	width: 50%;
-	}
-
-	.bonus_calculation-item__:last-child {
-		margin-right: auto;
-    	margin-left: auto;
-    	margin-bottom: 0;
+    	flex-direction: column;
 	}
 
 	.bonus_calculation-item {
 		padding: 25px;
+	}
+
+	.bonus_calculation-item__ {
+	    margin-right: auto;
+	    margin-left: auto;
+	    margin-bottom: 2%;
+	    width: 50%;
+	}
+
+	.bonus_calculation-item__:last-child {
+	    margin-right: auto;
+	    margin-left: auto;
+	    margin-bottom: 0;
+	}
+
+	.bonus_calculation-item_hidden-card {
+		padding: 20px;
 	}
 
 	.private_club-registration {
@@ -1758,21 +1832,46 @@ input:focus:-ms-input-placeholder { color:transparent; }
 		flex-direction: column;
 	}
 
-	.bonus_calculation-item__ {
-		margin-right: auto;
-    	margin-left: auto;
-    	margin-bottom: 2%;
-    	width: 75%;
+	.bonus_extra-item {
+		width: 30%;
+    	margin-right: 1%;
 	}
 
-	.bonus_calculation-item__:last-child {
-		margin-right: auto;
-    	margin-left: auto;
-    	margin-bottom: 0;
+	.bonus_extra-item-number {
+		font-size: 94px;
+	}
+
+	.bonus_extra-item-number-text {
+		width: 90%;
+	}
+
+	.bonus_calculation-item_text {
+		font-size: 16px;
+	}
+
+	.bonus_calculation-items {
+    	flex-direction: column;
 	}
 
 	.bonus_calculation-item {
 		padding: 25px;
+	}
+
+	.bonus_calculation-item__ {
+	    margin-right: auto;
+	    margin-left: auto;
+	    margin-bottom: 2%;
+	    width: 80%;
+	}
+
+	.bonus_calculation-item__:last-child {
+	    margin-right: auto;
+	    margin-left: auto;
+	    margin-bottom: 0;
+	}
+
+	.bonus_calculation-item_hidden-card {
+		padding: 20px;
 	}
 
 	.private_club-registration {
@@ -2281,29 +2380,51 @@ input:focus:-ms-input-placeholder { color:transparent; }
 		line-height: 120%;
 	}
 
-	.bonus_calculation-items {
-		flex-direction: column;
+	.bonus_extra-item {
+		width: 30%;
+    	margin-right: 1%;
 	}
 
-	.bonus_calculation-item__ {
-		margin-right: auto;
-    	margin-left: auto;
-    	margin-bottom: 2%;
-    	width: 90%;
+	.bonus_extra-item-number {
+		font-size: 94px;
 	}
 
-	.bonus_calculation-item__:last-child {
-		margin-right: auto;
-    	margin-left: auto;
-    	margin-bottom: 0;
-	}
-
-	.bonus_calculation-item {
-		padding: 25px;
+	.bonus_extra-item-number-text {
+		width: 90%;
 	}
 
 	.bonus_calculation-item_text {
-		font-size: 14px;
+		font-size: 16px;
+	}
+
+	.bonus_calculation-items {
+    	flex-direction: column;
+	}
+
+	.bonus_calculation-item {
+		padding: 25px 20px;
+	}
+
+	.bonus_calculation-item_choise-text {
+		margin: 28px 0 25px 20px;
+		width: 75%;
+	}
+
+	.bonus_calculation-item__ {
+	    margin-right: auto;
+	    margin-left: auto;
+	    margin-bottom: 5%;
+	    width: 100%;
+	}
+
+	.bonus_calculation-item__:last-child {
+	    margin-right: auto;
+	    margin-left: auto;
+	    margin-bottom: 0;
+	}
+
+	.bonus_calculation-item_hidden-card {
+		padding: 20px;
 	}
 
 	.private_club-registration {
@@ -2723,36 +2844,42 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	}
 
 	.bonus_calculation-items {
-		flex-direction: column;
-	}
-
-	.bonus_calculation-item__ {
-		margin-right: auto;
-    	margin-left: auto;
-    	margin-bottom: 7%;
-    	width: 100%;
-	}
-
-	.bonus_calculation-item__:last-child {
-		margin-right: auto;
-    	margin-left: auto;
-    	margin-bottom: 0;
+    	flex-direction: column;
 	}
 
 	.bonus_calculation-item {
-		padding: 25px 15px;
+		padding: 25px 10px;
 	}
 
-	.bonus_calculation-item_choise {
-		padding: 25px 15px;
-	}
-
-	.bonus_calculation-item_text {
-		font-size: 14px;
+	.bonus_calculation-item_choise-text {
+		margin: 28px 0 25px 10px;
+		width: 65%;
 	}
 
 	.bonus_calculation-item_text-hidden {
 		font-size: 12px;
+	}
+
+	.bonus_calculation-item__ {
+	    margin-right: auto;
+	    margin-left: auto;
+	    margin-bottom: 5%;
+	    width: 100%;
+	}
+
+	.bonus_calculation-item__:last-child {
+	    margin-right: auto;
+	    margin-left: auto;
+	    margin-bottom: 0;
+	}
+
+	.bonus_calculation-item_hidden-card {
+		padding: 20px 10px;
+	}
+
+	.item_hidden-card_text-name {
+		margin: 0 10px 0 0;
+		font-size: 14px;
 	}
 
 	.private_club-registration {
@@ -3176,36 +3303,42 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	}
 
 	.bonus_calculation-items {
-		flex-direction: column;
-	}
-
-	.bonus_calculation-item__ {
-		margin-right: auto;
-    	margin-left: auto;
-    	margin-bottom: 7%;
-    	width: 100%;
-	}
-
-	.bonus_calculation-item__:last-child {
-		margin-right: auto;
-    	margin-left: auto;
-    	margin-bottom: 0;
+    	flex-direction: column;
 	}
 
 	.bonus_calculation-item {
-		padding: 25px 15px;
+		padding: 25px 10px;
 	}
 
-	.bonus_calculation-item_choise {
-		padding: 25px 15px;
-	}
-
-	.bonus_calculation-item_text {
-		font-size: 14px;
+	.bonus_calculation-item_choise-text {
+		margin: 28px 0 25px 10px;
+		width: 60%;
 	}
 
 	.bonus_calculation-item_text-hidden {
 		font-size: 12px;
+	}
+
+	.bonus_calculation-item__ {
+	    margin-right: auto;
+	    margin-left: auto;
+	    margin-bottom: 5%;
+	    width: 100%;
+	}
+
+	.bonus_calculation-item__:last-child {
+	    margin-right: auto;
+	    margin-left: auto;
+	    margin-bottom: 0;
+	}
+
+	.bonus_calculation-item_hidden-card {
+		padding: 20px 10px;
+	}
+
+	.item_hidden-card_text-name {
+		margin: 0 10px 0 0;
+		font-size: 14px;
 	}
 
 	.private_club-registration {
