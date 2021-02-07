@@ -709,7 +709,7 @@ body {
 	flex-direction: column-reverse;
 	outline: none;
 	padding: 25px;
-	height: 30px;
+	height: 35px;
 	border: 2px solid;
 	border-color: #034899;
 	border-radius: 10px;
@@ -747,9 +747,9 @@ body {
 }
 
 .button_hidden_down {
-	width: 30px;
-	height: 30px;
-	margin: 25px;
+	width: 35px;
+	height: 35px;
+	margin: 25px 25px 25px auto;
 }
 
 .button_hidden {
@@ -817,6 +817,10 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	border-top: 2px solid;
 	border-color: #034899;
 	width: 100%;
+}
+
+.hide_but:checked + .button_hidden_down {
+	transform: rotate(180deg);
 }
 
 .bonus_calculation-item_hidden-card:first-child {
