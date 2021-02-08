@@ -401,6 +401,12 @@ body {
 
 .card-loyalty_section__category-icon {
 	margin-bottom: 20px;
+	margin-right: auto;
+    margin-left: auto;
+}
+
+.card-loyalty_section__category-inform {
+	text-align: center;
 }
 
 .card-loyalty_section__category-inform-name {
@@ -1770,7 +1776,6 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	.card-loyalty_section__category:last-child {
 	    margin-right: auto;
 	    margin-left: auto;
-	    padding-left: 25%;
 	}
 
 	.card-loyalty_section__category-icon {
