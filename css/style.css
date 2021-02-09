@@ -3075,7 +3075,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	}
 
 	.private_club-top-section {
-		background-image: url(../images/bg_mobile.jpg);
+		background-image: none;
 	}
 
 	.bonus_calculation-item_text {
@@ -3104,16 +3104,16 @@ input:focus:-ms-input-placeholder { color:transparent; }
     	width: 100%;
 	}
 
+	.private_club-top-section {
+		background-image: none;
+	}
+
 	.private_club-questions-box_item:first-child > .button-link_questions-page {
 		padding: 28px 10px;
 	}
 
 	.private_club-questions-box_item:last-child > .button-link_questions-page {
 		padding: 28px 10px;
-	}
-
-	.private_club-top-section {
-		background-image: url(../images/bg_mobile.jpg);
 	}
 
 	.bonus_calculation-item_text {
@@ -3137,10 +3137,6 @@ input:focus:-ms-input-placeholder { color:transparent; }
 
 @media (max-width: 340px){
 
-	.private_club-top-section {
-		background-image: url(../images/bg_mobile.jpg);
-	}
-
 	.menu-list {
 		font-size: 10px;
 		flex-direction: column;
@@ -3161,6 +3157,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	.private_club-top-section {
 		margin-bottom: 30px;
     	padding: 0;
+    	background-image: none;
 	}
 
 	.private_club_row {
