@@ -1142,7 +1142,20 @@ input:focus:-ms-input-placeholder { color:transparent; }
     border-radius: 0 15px 15px 0;
 }
 
+.hidden_text-mobile {
+	display: none;
+}
 
+.hidden_text-mobile {
+	font-family: "Roboto Regular";
+	color: #000000;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	line-height: 120%;
+    width: 95%;
+    margin: 0 auto 5px;
+}
 
 @media (min-width: 1201px) and (max-width: 1400px) {
 
@@ -1871,27 +1884,6 @@ input:focus:-ms-input-placeholder { color:transparent; }
 		flex-direction: column;
 	}
 
-	.bonus_extra-item {
-		width: 30%;
-    	margin-right: 1%;
-	}
-
-	.bonus_extra-item-number {
-		font-size: 94px;
-	}
-
-	.bonus_extra-item-number-text {
-		width: 90%;
-	}
-
-	.bonus_calculation-item_text {
-		font-size: 16px;
-	}
-
-	.bonus_calculation-items {
-    	flex-direction: column;
-	}
-
 	.bonus_calculation-item {
 		padding: 25px;
 	}
@@ -2398,7 +2390,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	.bonus_extra-item {
 		margin-right: 0;
     	margin-bottom: 35px;
-    	width: 100%;
+    	width: 90%;
 	}
 
 	.bonus_extra-item:last-child {
@@ -2426,19 +2418,6 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	    font-size: 20px;
 	    margin-bottom: 30px;
 		line-height: 120%;
-	}
-
-	.bonus_extra-item {
-		width: 30%;
-    	margin-right: 1%;
-	}
-
-	.bonus_extra-item-number {
-		font-size: 94px;
-	}
-
-	.bonus_extra-item-number-text {
-		width: 90%;
 	}
 
 	.bonus_calculation-item_text {
@@ -2608,7 +2587,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 
 	.private_club_row {
 		padding: 20px;
-		background: rgba(255, 255, 255, 0.2);
+		background: rgba(255, 255, 255, 0.5);
 	}
 
 	.private_club-row_content {
@@ -2716,7 +2695,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 
 	.private_club-growth_items {
 		margin-bottom: 0;
-		padding-left: 15%;
+		padding-left: 0;
 	}
 
 	.private_club-growth_item {
@@ -2915,7 +2894,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	.bonus_calculation-item__ {
 	    margin-right: auto;
 	    margin-left: auto;
-	    margin-bottom: 5%;
+	    margin-bottom: 10%;
 	    width: 100%;
 	}
 
@@ -3060,6 +3039,24 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	.private_club-questions-box_item:last-child > .button-link_questions-page {
 		padding: 28px 10px;
 	}
+
+	.bonus_calculation-item_text {
+		opacity: 0;
+	}
+
+	.bonus_calculation-item_text:focus {
+	    color: #000000;
+	    opacity: 1;
+	}
+
+	.bonus_calculation-item_text:active {
+	    color: #000000;
+	    opacity: 1;
+	}
+
+	.hidden_text-mobile {
+		display: inline-block;
+	}
 }
 
 @media (min-width: 401px) and (max-width: 440px) {
@@ -3075,6 +3072,28 @@ input:focus:-ms-input-placeholder { color:transparent; }
 
 	.private_club-questions-box_item:last-child > .button-link_questions-page {
 		padding: 28px 10px;
+	}
+
+	.private_club-top-section {
+		background-image: url(../images/bg_mobile.jpg);
+	}
+
+	.bonus_calculation-item_text {
+		opacity: 0;
+	}
+
+	.bonus_calculation-item_text:focus {
+	    color: #000000;
+	    opacity: 1;
+	}
+
+	.bonus_calculation-item_text:active {
+	    color: #000000;
+	    opacity: 1;
+	}
+
+	.hidden_text-mobile {
+		display: inline-block;
 	}
 }
 
@@ -3092,9 +3111,35 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	.private_club-questions-box_item:last-child > .button-link_questions-page {
 		padding: 28px 10px;
 	}
+
+	.private_club-top-section {
+		background-image: url(../images/bg_mobile.jpg);
+	}
+
+	.bonus_calculation-item_text {
+		opacity: 0;
+	}
+
+	.bonus_calculation-item_text:focus {
+	    color: #000000;
+	    opacity: 1;
+	}
+
+	.bonus_calculation-item_text:active {
+	    color: #000000;
+	    opacity: 1;
+	}
+
+	.hidden_text-mobile {
+		display: inline-block;
+	}
 }
 
 @media (max-width: 340px){
+
+	.private_club-top-section {
+		background-image: url(../images/bg_mobile.jpg);
+	}
 
 	.menu-list {
 		font-size: 10px;
@@ -3120,7 +3165,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 
 	.private_club_row {
 		padding: 10px;
-		background: rgba(255, 255, 255, 0.2);
+		background: rgba(255, 255, 255, 0.5);
 	}
 
 	.private_club-row_content {
@@ -3431,7 +3476,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	.bonus_calculation-item__ {
 	    margin-right: auto;
 	    margin-left: auto;
-	    margin-bottom: 5%;
+	    margin-bottom: 10%;
 	    width: 100%;
 	}
 
@@ -3448,6 +3493,20 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	.item_hidden-card_text-name {
 		margin: 0 10px 0 0;
 		font-size: 14px;
+	}
+
+	.bonus_calculation-item_text {
+		opacity: 0;
+	}
+
+	.bonus_calculation-item_text:focus {
+	    color: #000000;
+	    opacity: 1;
+	}
+
+	.bonus_calculation-item_text:active {
+	    color: #000000;
+	    opacity: 1;
 	}
 
 	.private_club-registration {
@@ -3572,5 +3631,9 @@ input:focus:-ms-input-placeholder { color:transparent; }
 
 	.private_club-questions-box_item:last-child > .button-link_questions-page {
 		padding: 40px 10px;
+	}
+
+	.hidden_text-mobile {
+		display: inline-block;
 	}
 }
