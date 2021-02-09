@@ -220,10 +220,14 @@ body {
 	padding: 18px 26px;
 	cursor: pointer;
 	outline: none;
+}
+
+.button_card-link {
+	text-decoration: none;
 	margin-right: 5%;
 }
 
-.button_card:last-child {
+.button_card-link:last-child {
 	margin-right: 0;
 }
 
@@ -1138,6 +1142,8 @@ input:focus:-ms-input-placeholder { color:transparent; }
     border-radius: 0 15px 15px 0;
 }
 
+
+
 @media (min-width: 1201px) and (max-width: 1400px) {
 
 	.private_club-top-section {
@@ -1354,6 +1360,14 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	.button_card {
 		margin-right: 3%;
 		font-size: 18px;
+	}
+
+	.button_card-link {
+		margin-right: 0;
+	}
+
+	.button_card-link:last-child > .button_card {
+		margin-right: 0;
 	}
 
 	.icon_advantages {
@@ -2040,9 +2054,10 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	    padding: 10px;
 	    font-size: 16px;
 	    margin-bottom: 3%;
+	    margin-right: 0;
 	}
 
-	.button_card:last-child {
+	.button_card-link:last-child > .button_card {
 		margin-bottom: 0;
 	}
 
@@ -2078,7 +2093,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	    margin-bottom: 3%;
 	}
 
-	.button_card:last-child {
+	.button_card-link:last-child > .button_card {
 		margin-bottom: 0;
 	}
 
@@ -2114,7 +2129,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	    margin-bottom: 3%;
 	}
 
-	.button_card:last-child {
+	.button_card-link:last-child > .button_card {
 		margin-bottom: 0;
 	}
 
@@ -2209,7 +2224,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	    margin-right: 0;
 	}
 
-	.button_card:last-child {
+	.button_card-link:last-child > .button_card {
 		margin-bottom: 0;
 	}
 
@@ -2643,7 +2658,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	    margin-right: 0;
 	}
 
-	.button_card:last-child {
+	.button_card-link:last-child > .button_card {
 		margin-bottom: 0;
 	}
 
@@ -3155,7 +3170,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	    margin-right: 0;
 	}
 
-	.button_card:last-child {
+	.button_card-link:last-child > .button_card {
 		margin-bottom: 0;
 	}
 
