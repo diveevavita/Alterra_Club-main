@@ -3075,7 +3075,10 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	}
 
 	.private_club-top-section {
-		background-image: none;
+		background-image: url(../images/woman_mobile.jpg);
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
 	}
 
 	.bonus_calculation-item_text {
@@ -3105,7 +3108,10 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	}
 
 	.private_club-top-section {
-		background-image: none;
+		background-image: url(../images/woman_mobile.jpg);
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
 	}
 
 	.private_club-questions-box_item:first-child > .button-link_questions-page {
@@ -3157,7 +3163,10 @@ input:focus:-ms-input-placeholder { color:transparent; }
 	.private_club-top-section {
 		margin-bottom: 30px;
     	padding: 0;
-    	background-image: none;
+    	background-image: url(../images/woman_mobile.jpg);
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
 	}
 
 	.private_club_row {
